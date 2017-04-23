@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>BashCorp: Professional IT Services.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
@@ -57,6 +58,10 @@
 			z-index: -1;
 		}
 
+		.container {
+			margin-bottom: 460px;
+		}
+
 		div, p, h1, h2, h3, h4, .navbar, .navbar-collapse, footer {
 			z-index: 1;
 		}
@@ -107,8 +112,8 @@
         					<span class="icon-bar"></span>
         					<span class="icon-bar"></span>
       					</button>
-      					<a class="navbar-brand" href="#">
-      						<h1 style="position: fixed; top: 5px; left: 20px">
+      					<a class="navbar-brand" href="/">
+      						<h1 style="position: absolute; top: -10px; left: 20px">
       							<img id="cloud" src="../assets/Cloud.svg" style="width: 40px" />
 								<img id="kaylee" src="../assets/Kaylee.svg" style="width: 40px" />
 								BashCorp
@@ -118,7 +123,7 @@
 
     				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       					<ul class="nav navbar-nav">
-        					<li> <a href="http://www.bashcorp.co.uk/services"><i class="fa fa-laptop"></i> services</a></li>
+        					<li> <a href="http://www.bashcorp.co.uk/services.html"><i class="fa fa-laptop"></i> services</a></li>
         					<li> <a href="mailto:enquiries@bashcorp.co.uk"><i class="fa fa-envelope"></i> contact us</a></li> 
       					</ul>      
     				</div>
@@ -145,9 +150,9 @@
 
 				<p>As well as working with you in-house to get your projects in on-time, we can also act out-sourced to deliver completed systems, offer remote support, or organise and facilitate Usability testing sessions with YOUR users!</p>
 
-				<p>Read more about our <a href="http://www.bashcorp.co.uk/services">services</a></p>
+				<p>Read more about our <a href="http://www.bashcorp.co.uk/services.html">services</a></p>
 				<p><a href="mailto:enquiries@bashcorp.co.uk">Contact us</a>.</p>
-			</div>
+								
 			<img src="../assets/bg3.png" class="bg" />
 		</div>
 
@@ -182,10 +187,6 @@
                 max = Math.floor(max);
                 return Math.floor(Math.random() * (max - min + 1)) + min;
             } 
-
-			$("a").click(function() {
-				$("#content").fadeOut(0).hide(2000);
-			});
 
 			$(document).ready(function() {
 				$("#content").hide(0).fadeIn(2000);
