@@ -114,8 +114,8 @@
       					</button>
       					<a class="navbar-brand" href="/">
       						<h1 style="position: absolute; top: -10px; left: 20px">
-      							<img id="cloud" src="../assets/Cloud.svg" style="width: 40px" />
-								<img id="kaylee" src="../assets/Kaylee.svg" style="width: 40px" />
+      							<img id="cloud" src="Cloud.svg" style="width: 40px" />
+								<img id="kaylee" src="Kaylee.svg" style="width: 40px" />
 								BashCorp
 							</h1>
 	  					</a>
@@ -151,7 +151,7 @@
 				<p>Day rates per developer start from &#163;250 per day for remote work or onsite work in the southeast and from &#163;300 for onsite work in London.</p>
 				<p>However, every project is unique, and rates will vary depending on the specific nature of the work we do together, so please <a href="mailto:enquiries@bashcorp.co.uk">get in touch</a> for a precise quote. Agencies welcome.</p>
 			</div>
-			<img src="../assets/bg3.png" class="bg" />
+			<img src="bg3.png" class="bg" />
 		</div>
 
 		<script>
@@ -159,18 +159,18 @@
 			var cloudBlinkInterval = 0;
 
 			function kayleeBlink(){
-				$( "#kaylee" ).attr("src", "../assets/Kaylee blink.svg");
+				$( "#kaylee" ).attr("src", "Kaylee blink.svg");
 				setTimeout(function(){
-					$( "#kaylee" ).attr("src", "../assets/Kaylee.svg");			
+					$( "#kaylee" ).attr("src", "Kaylee.svg");			
 					clearInterval(kayleeBlinkInterval);
 					kayleeBlinkInterval = setInterval("kayleeBlink()", getRandomInterval());
 				}, 500);
 			}
 
 			function cloudBlink(){
-				$( "#cloud" ).attr("src", "../assets/Cloud blink.svg");
+				$( "#cloud" ).attr("src", "Cloud blink.svg");
 				setTimeout(function(){
-					$( "#cloud" ).attr("src", "../assets/Cloud.svg");
+					$( "#cloud" ).attr("src", "Cloud.svg");
 					clearInterval(cloudBlinkInterval);
 					cloudBlinkInterval = setInterval("cloudBlink()", getRandomInterval());
 				}, 500);
