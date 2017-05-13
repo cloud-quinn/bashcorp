@@ -7,7 +7,11 @@ npm-debug.log
 tmp
 .DS_Store
 .idea
-
+BashCorp/obj/
+BashCorp/bin/
+packages/
+.suo
+.user
 
 # Created by https://www.gitignore.io/api/windows,macos,node,bower
 

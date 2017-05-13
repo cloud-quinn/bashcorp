@@ -1,0 +1,97 @@
+﻿body {
+    width: calc(100vw);
+    background-color: #F5F5F5 !important;
+    color: #181818;
+}
+
+body, .navbar a, .navbar a:hover {
+    color: #181818;
+    font-family: 'Inconsolata', monospace !important;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace !important;
+}
+
+.navbar, .navbar-collapse {
+    background-color: #FFF /*#F5F5F5*/ !important;
+}
+
+.navbar {
+    position: fixed !important;
+    width: 100% !important;
+}
+
+.top-buffer {
+    height:100px;
+    background: #F5F5F5;
+	
+}
+
+.navbar {
+    padding: 1em 0;
+    margin: 1em 0;
+}
+
+.navbar-collapse {
+    margin: 1em 0 0 0;
+}
+
+footer a {
+    color: #fff !important;
+}
+
+    footer a:hover {
+        color: azure !important;
+    }
+
+
+#canvas {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container {
+    margin-bottom: 460px;
+}
+
+div, p, h1, h2, h3, h4, .navbar, .navbar-collapse, footer {
+    z-index: 1;
+}
+
+a {
+    z-index: 2;
+}
+
+ul {
+    list-style: square;
+}
+
+.bg {
+    position: fixed;
+    bottom: 0;
+    left: -750px;
+    width: auto;
+    height: 450px;
+    z-index: -1;
+}
+
+@media(min-width: 768px) {
+    .navbar {
+        padding: 1em 0;
+        margin: 1em 0;
+    }
+
+    .navbar-collapse {
+        margin: 0;
+    }
+
+    .bg {
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}

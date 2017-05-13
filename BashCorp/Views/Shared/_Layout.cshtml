@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BashCorp: Professional IT Services.</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header" style="min-width: 300px">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+                    <h1 style="position: absolute; top: -10px; left: 20px">
+                        <img id="cloud" src="~/Content/assets/Cloud.svg" style="width: 40px" />
+                        <img id="kaylee" src="~/Content/assets/Kaylee.svg" style="width: 40px" />
+                        BashCorp
+                    </h1>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li> <a href="/services"><i class="fa fa-laptop"></i> services</a></li>
+                    <li> <a href="mailto:enquiries@bashcorp.co.uk"><i class="fa fa-envelope"></i> contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <div class="top-buffer"></div>
+        @RenderBody()
+        <img src="~/Content/assets/bg3.png" class="bg" />
+    </div>
+    <script>
+        var kayleeBlinkInterval = 0;
+        var cloudBlinkInterval = 0;
+
+        function kayleeBlink() {
+            $("#kaylee").attr("src", "/Content/assets/Kaylee blink.svg");
+            setTimeout(function () {
+                $("#kaylee").attr("src", "/Content/assets/Kaylee.svg");
+                clearInterval(kayleeBlinkInterval);
+                kayleeBlinkInterval = setInterval("kayleeBlink()", getRandomInterval());
+            }, 500);
+        }
+
+        function cloudBlink() {
+            $("#cloud").attr("src", "/Content/assets/Cloud blink.svg");
+            setTimeout(function () {
+                $("#cloud").attr("src", "/Content/assets/Cloud.svg");
+                clearInterval(cloudBlinkInterval);
+                cloudBlinkInterval = setInterval("cloudBlink()", getRandomInterval());
+            }, 500);
+        }
+
+        function getRandomInterval() {
+            return Math.floor((Math.random() * (25 - 7 + 1)) + 5) * 1000;
+        }
+
+        function getRandomInteger(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        $(document).ready(function () {
+            $("#content").hide(0).fadeIn(2000);
+
+            if (kayleeBlinkInterval) {
+                clearInterval(kayleeBlinkInterval);
+            }
+            if (cloudBlinkInterval) {
+                clearInterval(cloudBlinkInterval);
+            }
+            kayleeBlinkInterval = setInterval("kayleeBlink()", 3000);
+            cloudBlinkInterval = setInterval("cloudBlink()", 6000);
+        });
+    </script>
+
+</body>
+</html>
