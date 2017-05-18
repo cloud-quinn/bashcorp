@@ -4,6 +4,10 @@
     color: #181818;
 }
 
+.btn, .well {
+    border-radius: 2px !important;
+}
+
 body, .navbar a, .navbar a:hover {
     color: #181818;
     font-family: 'Inconsolata', monospace !important;
@@ -56,6 +60,11 @@ footer a {
 
 .container {
     margin-bottom: 460px;
+}
+
+.semiopaque {
+    background: #FFF;
+    opacity: 0.9;
 }
 
 div, p, h1, h2, h3, h4, .navbar, .navbar-collapse, footer {
