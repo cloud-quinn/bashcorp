@@ -8,7 +8,7 @@
     @System.Web.Optimization.Styles.Render("~/Content/Essential.css")
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header" style="min-width: 300px">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,13 +28,43 @@
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li> <a href="/services"><i class="fa fa-laptop"></i> services</a></li>
-                    <li> <a href="mailto:enquiries@bashcorp.co.uk"><i class="fa fa-envelope"></i> contact us</a></li>
+                    <li>
+                        <a href="@Url.Action("Services","Index" )">
+                            <i class="fa fa-laptop" aria-hidden="true"></i> Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="@Url.Action("Contact", "Index")">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <span class="navbar-text">
+                            <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                            <span class="lead"> +44 (0) 1233 659 866</span>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/bashcorpit">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company-beta/11126147/">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                            <span class="sr-only">LinkedIn</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="content">
+    <div class="container-fluid">
         <div class="top-buffer"></div>
         <div class="semiopaque">
             @RenderBody()
@@ -43,7 +73,7 @@
         <div class="row">
             <div class="well col-xs-10 col-xs-offset-1">
                 <p class="text-center">
-                    &copy; BashCorp Ltd. UK Registered Company 10727538. All rights reserved.
+                    &copy; BashCorp Ltd. @DateTime.Now.Year UK Registered Company 10727538. All rights reserved.
                 </p>
             </div>
         </div>
