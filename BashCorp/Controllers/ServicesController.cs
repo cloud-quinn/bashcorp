@@ -8,7 +8,6 @@ namespace BashCorp.Controllers
 {
     public class ServicesController : Controller
     {
-        // GET: Services
         public ActionResult Index()
         {
             return View();
