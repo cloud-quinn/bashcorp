@@ -101,6 +101,8 @@
     <Content Include="Content\assets\AngularJS_logo.svg" />
     <Content Include="Content\assets\avatar-square.png" />
     <Content Include="Content\assets\bg3.png" />
+    <Content Include="Content\assets\Boostrap_logo.png" />
+    <Content Include="Content\assets\cccu.png" />
     <Content Include="Content\assets\Cloud blink.svg" />
     <Content Include="Content\assets\cloud-avatar.png" />
     <Content Include="Content\assets\Cloud.svg" />
@@ -111,8 +113,14 @@
     <Content Include="Content\assets\mongodb.png" />
     <Content Include="Content\assets\Node.js_logo.svg" />
     <Content Include="Content\assets\Node.js_logo.svg.png" />
-    <Content Include="Content\assets\psl-logo.png" />
+    <Content Include="Content\assets\pret.png" />
+    <Content Include="Content\assets\psl.png" />
+    <Content Include="Content\assets\reactjs.png" />
     <Content Include="Content\assets\Sass_Logo_Color.svg.png" />
+    <Content Include="Content\assets\screens-no-news-pre-arrival.png" />
+    <Content Include="Content\assets\tm1.png" />
+    <Content Include="Content\assets\tm2.png" />
+    <Content Include="Content\assets\tm3.png" />
     <Content Include="Content\assets\Unofficial_JavaScript_logo_2.svg.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

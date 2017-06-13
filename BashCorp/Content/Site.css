@@ -14,7 +14,7 @@ body, .navbar a, .navbar a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, .small-title {
+h1, h2, h3, h4, h5, h6, .small-title, .header {
     font-family: 'VT323', monospace !important;
 }
 
@@ -44,6 +44,14 @@ h1, h2, h3, h4, h5, h6, .small-title {
 
 .navbar-collapse {
     margin: 1em 0 0 0;
+}
+
+.profile-image {
+    margin: 0.5em 0 1em 0;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 1px 1px #353434;
+    -moz-box-shadow: 2px 2px 1px 1px #353434;
+    box-shadow: 2px 2px 1px 1px #353434;
 }
 
 footer a {
@@ -121,11 +129,11 @@ ul {
     margin: 0 1em 1em 0;
 }
 
-.sass, .mongodb {
+.sass, .mongodb, .bootstrap {
     height: 19px;
 }
 
-.dotnet, .html5, .angularjs, .nodejs {
+.dotnet, .html5, .angularjs, .nodejs, .reactjs {
     height: 26px;
 }
 
@@ -141,9 +149,25 @@ ul {
     margin: 1em 0;
 }
 
+.xs-show {
+    display: block;
+}
+
+.xs-hide {
+    display: none;
+}
+
 @media(min-width: 500px) {
     .footer-text {
         transform: translateY(-60px) translateX(calc(100vw / 4));
+    }
+
+    .xs-hide {
+        display: block;
+    }
+
+    .xs-show {
+        display: none;
     }
 }
 
@@ -155,9 +179,13 @@ ul {
 
 @media(min-width: 768px) {
 
+    .profile-image {
+        margin: 1em 0;
+    }
+
     .navbar {
         padding: 1em 0;
-        margin: 1em 0;
+        margin: 0 0;
     }
 
     .navbar-collapse {
@@ -187,11 +215,11 @@ ul {
         margin-right: 2em;
     }
 
-    .dotnet, .html5, .angularjs, .nodejs {
+    .dotnet, .html5, .angularjs, .nodejs, .reactjs {
         height: 30px;
     }
 
-    .sass, .mongodb {
+    .sass, .mongodb, .bootstrap {
         height: 25px;
     }
 
