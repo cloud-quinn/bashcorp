@@ -14,7 +14,7 @@ body, .navbar a, .navbar a:hover {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .small-title {
     font-family: 'VT323', monospace !important;
 }
 
@@ -113,6 +113,34 @@ ul {
     z-index: 10;
 }
 
+.project-title {
+    display: block;
+}
+
+.skill {
+    margin: 0 1em 1em 0;
+}
+
+.sass, .mongodb {
+    height: 19px;
+}
+
+.dotnet, .html5, .angularjs, .nodejs {
+    height: 26px;
+}
+
+.jquery, .js {
+    height: 14px;
+}
+
+.project-image {
+    width: 90%;
+}
+
+.row {
+    margin: 1em 0;
+}
+
 @media(min-width: 500px) {
     .footer-text {
         transform: translateY(-60px) translateX(calc(100vw / 4));
@@ -126,6 +154,7 @@ ul {
 }
 
 @media(min-width: 768px) {
+
     .navbar {
         padding: 1em 0;
         margin: 1em 0;
@@ -138,9 +167,9 @@ ul {
     .bg-wrapper {
         left: 0;
         width: 100%;
-        background: -moz-linear-gradient(top, rgba(245,245,245,0) 1%, rgba(245,245,245,1) 10%);
-        background: -webkit-linear-gradient(top, rgba(245,245,245,0) 1%,rgba(245,245,245,1) 10%);
-        background: linear-gradient(to bottom, rgba(245,245,245,0) 1%,rgba(245,245,245,1) 10%);
+        background: -moz-linear-gradient(top, rgba(245,245,245,0) 1%, rgba(245,245,245,1) 50%);
+        background: -webkit-linear-gradient(top, rgba(245,245,245,0) 1%,rgba(245,245,245,1) 50%);
+        background: linear-gradient(to bottom, rgba(245,245,245,0) 1%,rgba(245,245,245,1) 50%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F5F5', endColorstr='#F5F5F5',GradientType=0 );
     }
 
@@ -151,6 +180,23 @@ ul {
     .footer-text {
         transform: translateY(-30px) translateX(calc(100vw / 6.5));
         display: inline-block;
+    }
+
+    .project-title {
+        display: inline;
+        margin-right: 2em;
+    }
+
+    .dotnet, .html5, .angularjs, .nodejs {
+        height: 30px;
+    }
+
+    .sass, .mongodb {
+        height: 25px;
+    }
+
+    .jquery, .js {
+        height: 20px;
     }
 }
 
@@ -170,6 +216,7 @@ ul {
     .footer-text {
         transform: translateY(-30px) translateX(calc(100vw / 3.5));
     }
+
     .bg {
         width: 100%;
     }
