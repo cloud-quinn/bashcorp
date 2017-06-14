@@ -13,5 +13,10 @@ namespace BashCorp.Controllers
         {
             return View();
         }
+
+        public ActionResult Kaylee()
+        {
+            return View();
+        }
     }
 }

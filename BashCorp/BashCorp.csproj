@@ -153,10 +153,12 @@
     <Content Include="Content\assets\bg3.png" />
     <Content Include="Content\assets\Boostrap_logo.png" />
     <Content Include="Content\assets\cccu.png" />
+    <Content Include="Content\assets\CIPFA.png" />
     <Content Include="Content\assets\Cloud blink.svg" />
     <Content Include="Content\assets\cloud-avatar.png" />
     <Content Include="Content\assets\Cloud.svg" />
     <Content Include="Content\assets\CSS3_and_HTML5_logos_and_wordmarks.svg.png" />
+    <Content Include="Content\assets\kaylee-avatar.png" />
     <Content Include="Content\assets\kappu.png" />
     <Content Include="Content\assets\Kaylee blink.svg" />
     <Content Include="Content\assets\Kaylee.svg" />
@@ -168,6 +170,7 @@
     <Content Include="Content\assets\reactjs.png" />
     <Content Include="Content\assets\Sass_Logo_Color.svg.png" />
     <Content Include="Content\assets\screens-no-news-pre-arrival.png" />
+    <Content Include="Content\assets\sitecore_logo.gif" />
     <Content Include="Content\assets\tm1.png" />
     <Content Include="Content\assets\tm2.png" />
     <Content Include="Content\assets\tm3.png" />
@@ -237,6 +240,7 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Shared\Navigation.cshtml" />
     <Content Include="Views\Biography\Cloud.cshtml" />
+    <Content Include="Views\Biography\Kaylee.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
