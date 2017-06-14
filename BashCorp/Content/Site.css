@@ -133,7 +133,7 @@ ul {
     height: 19px;
 }
 
-.dotnet, .html5, .angularjs, .nodejs, .reactjs {
+.dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
     height: 26px;
 }
 
@@ -212,10 +212,10 @@ ul {
 
     .project-title {
         display: inline;
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
-    .dotnet, .html5, .angularjs, .nodejs, .reactjs {
+    .dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
         height: 30px;
     }
 
@@ -225,6 +225,10 @@ ul {
 
     .jquery, .js {
         height: 20px;
+    }
+
+    .skill {
+        float: right;
     }
 }
 

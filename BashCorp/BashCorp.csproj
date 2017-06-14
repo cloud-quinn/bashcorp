@@ -149,6 +149,7 @@
     <Content Include="Content\assets\2000px-JQuery_logo_text.svg.png" />
     <Content Include="Content\assets\800px-Microsoft_NET_logo_old.svg.png" />
     <Content Include="Content\assets\AngularJS_logo.svg" />
+    <Content Include="Content\assets\arlequin.png" />
     <Content Include="Content\assets\avatar-square.png" />
     <Content Include="Content\assets\bg3.png" />
     <Content Include="Content\assets\Boostrap_logo.png" />
@@ -159,9 +160,12 @@
     <Content Include="Content\assets\Cloud.svg" />
     <Content Include="Content\assets\CSS3_and_HTML5_logos_and_wordmarks.svg.png" />
     <Content Include="Content\assets\kaylee-avatar.png" />
+    <Content Include="Content\assets\cricket-society.png" />
+    <Content Include="Content\assets\fysst.png" />
     <Content Include="Content\assets\kappu.png" />
     <Content Include="Content\assets\Kaylee blink.svg" />
     <Content Include="Content\assets\Kaylee.svg" />
+    <Content Include="Content\assets\Maidstone Laser.png" />
     <Content Include="Content\assets\mongodb.png" />
     <Content Include="Content\assets\Node.js_logo.svg" />
     <Content Include="Content\assets\Node.js_logo.svg.png" />
@@ -171,9 +175,11 @@
     <Content Include="Content\assets\Sass_Logo_Color.svg.png" />
     <Content Include="Content\assets\screens-no-news-pre-arrival.png" />
     <Content Include="Content\assets\sitecore_logo.gif" />
+    <Content Include="Content\assets\Student Portal.png" />
     <Content Include="Content\assets\tm1.png" />
     <Content Include="Content\assets\tm2.png" />
     <Content Include="Content\assets\tm3.png" />
+    <Content Include="Content\assets\umbraco.png" />
     <Content Include="Content\assets\Unofficial_JavaScript_logo_2.svg.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
