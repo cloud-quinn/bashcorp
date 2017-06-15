@@ -126,10 +126,11 @@ ul {
 }
 
 .skill {
-    margin: 0 1em 1em 0;
+    margin: 5px;
+    height: 20px;
 }
 
-.sass, .mongodb, .bootstrap {
+/*.sass, .mongodb, .bootstrap {
     height: 19px;
 }
 
@@ -139,7 +140,7 @@ ul {
 
 .jquery, .js {
     height: 14px;
-}
+}*/
 
 .project-image {
     width: 90%;
@@ -215,13 +216,13 @@ ul {
         margin-right: 1em;
     }
 
-    .dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
+    /*.dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
         height: 30px;
     }
 
     .sass, .mongodb, .bootstrap {
         height: 25px;
-    }
+    }*/
 
     .jquery, .js {
         height: 20px;
