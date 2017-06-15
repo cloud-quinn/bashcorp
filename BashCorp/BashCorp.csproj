@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\2000px-JQuery_logo_text.svg.png" />
+    <Content Include="Content\assets\6116.SQLServerNoVersion_thumb_170B4444.png" />
     <Content Include="Content\assets\800px-Microsoft_NET_logo_old.svg.png" />
     <Content Include="Content\assets\AngularJS_logo.svg" />
     <Content Include="Content\assets\arlequin.png" />
