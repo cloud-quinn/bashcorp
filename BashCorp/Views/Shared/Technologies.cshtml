@@ -1,0 +1,6 @@
+﻿@model BashCorp.Models.Tech[]
+
+@foreach (var tech in Model.OrderByDescending(t => Enum.GetName(typeof(BashCorp.Models.Tech), t)))
+{
+    <span>@Html.DisplayFor(n => BashCorp.Models.SkillsList.Instance.Skills[tech])</span>
+}

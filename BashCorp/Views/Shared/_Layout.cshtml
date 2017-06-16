@@ -1,0 +1,31 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BashCorp: Professional IT Services.</title>
+    @System.Web.Optimization.Styles.Render("~/Content/Essential.css")
+    @System.Web.Optimization.Scripts.Render("~/Scripts/Essential.js")
+</head>
+<body>
+    @Html.Partial("Navigation")
+    <div class="container">
+        <div class="top-buffer"></div>
+        <div>
+            @RenderBody()
+        </div>
+        <div class="bg-wrapper">
+            <img src="~/Content/assets/bg3.png" class="bg" />
+            <p class="text-center footer-text">
+                &copy; BashCorp Ltd. @DateTime.Now.Year
+            </p> 
+            <p class ="text-center footer-text">UK Registered Company 10727538.</p> 
+            <p class="text-center footer-text">All rights reserved.</p>   
+        </div>
+
+    </div>
+    @System.Web.Optimization.Styles.Render("~/Content/Tertiary.css")
+    @System.Web.Optimization.Scripts.Render("~/Scripts/Tertiary.js")
+</body>
+</html>

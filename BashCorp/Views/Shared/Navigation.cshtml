@@ -1,0 +1,73 @@
+﻿<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" style="min-width: 300px">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <h1 style="position: absolute; top: -10px; left: 20px">
+                    <img id="cloud" src="~/Content/assets/Cloud.svg" style="width: 40px" />
+                    <img id="kaylee" src="~/Content/assets/Kaylee.svg" style="width: 40px" />
+                    BashCorp
+                </h1>
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="@Url.Action("Index", "Services" )">
+                        <i class="fa fa-laptop" aria-hidden="true"></i> Services
+                    </a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Contact")">
+                        <i class="fa fa-envelope" aria-hidden="true"></i> Contact
+                    </a>
+                </li>
+                <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-female" aria-hidden="true"></i><i class="fa fa-male" aria-hidden="true"></i> Meet the Team <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="@Url.Action("Cloud", "Biography")">
+                                <i class="fa fa-male" aria-hidden="true"></i> Cloud
+                            </a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Kaylee", "Biography")">
+                                <i class="fa fa-female" aria-hidden="true"></i> Kaylee
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <span class="navbar-text">
+                        <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                        <span class="lead"> +44 (0) 1233 659 866</span>
+                    </span>
+                </li>
+                <li>
+                    <a href="https://twitter.com/bashcorpit">
+                        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company-beta/11126147/">
+                        <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

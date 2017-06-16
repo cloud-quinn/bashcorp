@@ -1,0 +1,125 @@
+﻿@using BashCorp.Models
+@{
+    ViewBag.Title = "Kaylee E. Biography";
+}
+
+
+<div class="row">
+    <span class="col-xs-4 col-sm-3 col-md-2 col-lg-1">
+        <img class="img-responsive profile-image" src="~/Content/assets/kaylee-avatar.png" />
+    </span>
+    <span class="col-xs-8 col-sm-9 col-md-10 col-lg-11">
+        <span class="header xs-show" style="font-size: 2.25em;">Kaylee E, BSc.</span>
+        <span>
+            <span class="header xs-hide" style="font-size: 2.25em;">Kaylee E, BSc.</span>
+            I'm a dedicated, skilled senior software engineer with over a decade of experience in the Microsoft stack. I'm proficient in C# .Net (both MVC and WebForms), service-oriented systems (WCF, WebAPI) and Sitecore 6.4 - 7.5.  I'm certified in Sitecore and led the migration from 6.5 - 7.5 for CIPFA in London.  I'm a strong advocate of agile, TDD/BDD approaches and am highly skilled with NUnit, XUnit, SpecFlow, Moq and Rhino.Mocks.  On the JavaScript side, I am right at home with ECMA2016 (via Babel), WebPack and Grunt, React+Redux and NodeJS.  I'm well versed in both Microsoft SQL Server and MongoDB.  Finally I am a highly accomplished Usability specialist, able to run user testing sessions; questionnaires, paper prototyping research and heuristic analysis to improve application usability.
+        </span>
+    </span>
+</div>
+
+
+<h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Software projects</h2>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="z-index: -1">
+        <img class="img-responsive project-image" src="~/Content/assets/CIPFA.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%">
+            <a href="http://www.cipfa.org" target="_blank">CIPFA</a>
+        </span>
+        @Html.Partial("Technologies", new Tech[] { Tech.Sitecore, Tech.DotNet, Tech.SQLServer, Tech.HTML5CSS3 })
+        <br />
+        Summar 2017 &rarr; Present
+        <br />
+        My old friends at the Chartered Institute of Public Finances and Accounts and I have been working on a new training management portal.  It will allow employers, responsible for their employees training needs, to monitor the courses that they are enrolled upon and their student's progress.  It's written using ASP.Net WebForms, Sitecore 7.5 and .Net 4.5 against a 3rd party SOAP CRM.
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img class="img-responsive project-image" src="~/Content/assets/Kappu.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%">
+            <a href="http://www.kappu.earth/" target="_blank">Kappu Ltd.</a>
+        </span>
+        @Html.Partial("Technologies", new Tech[] { Tech.MongoDB, Tech.Node, Tech.Babel, Tech.Webpack, Tech.Mocha, Tech.AWS })
+        <br />
+        01/2017 &rarr; 05/2017
+        <br />
+       After being headhunted by the CEO of this exciting startup, I built (from scratch) an API to handle their bespoke eLearning needs. Written in ECMA2016 (transcompiled into standard JS via Babel) NodeJS and with a MongoDB backend, this RESTful service has upwards of 90% code coverage through Mocha unit tests and is blindingly fast.  I also built their continuous integration and deployment mechanisms using TeamCity and Octopus, as well as configuring their AWS EC2/S3 environments.
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img class="img-responsive project-image" src="~/Content/assets/Student Portal.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%">
+            <a href="http://www.canterbury.ac.uk" target="_blank">Canterbury Christ Church University</a>
+        </span>
+        @Html.Partial("Technologies", new Tech[] { Tech.React, Tech.Webpack, Tech.MongoDB, Tech.DotNet, Tech.SQLServer, Tech.HTML5CSS3, Tech.JQuery })
+        <br />
+        4/2016 &rarr; 1/2017
+        <br />
+        Ah, my alma mata. I joined their Application Delivery team to help bring in some UX expertise and to help migrate their Student Portal from Angular 1.x to a React-Redux application.  I also built them a new student account management system using the Microsoft Enterprise Library, for STRIDE/OWASP compliant security, and rebuilt their student clearing management tool using plain ol' .Net MVC and Entity Framework.
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="z-index: -1">
+        <img class="img-responsive project-image" src="~/Content/assets/CIPFA.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%">
+            <a href="http://www.cipfa.org" target="_blank">CIPFA</a>
+        </span>
+        @Html.Partial("Technologies", new Tech[] { Tech.Sitecore, Tech.DotNet, Tech.SQLServer, Tech.MongoDB, Tech.HTML5CSS3, Tech.JQuery, Tech.JavaScript })
+        <br />
+        2014 &rarr; 2016
+        <br />
+        Back in 2015 I joined the New Media Team at CIPFA and migrated their Sitecore installation from 6.5 all the way up to 7.5- complete with MongoDB for the Experience platform. I also created for them a continuous integration and deployment process using TeamCity and Octopus and helped to solve some serious performance issues with their site that ended up being caused by duff hard disks at their hosting provider!
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="z-index: -1">
+        <img class="img-responsive project-image" src="~/Content/assets/Project ATLAS.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%">
+            <a href="http://travel.saga.co.uk" target="_blank">Saga Travel</a>
+        </span>
+        @Html.Partial("Technologies", new Tech[] { Tech.Sitecore, Tech.DotNet, Tech.SQLServer, Tech.HTML5CSS3, Tech.JQuery, Tech.Grunt, Tech.Require, Tech.Knockout })
+        <br />
+        2010 &rarr; 2014
+        <br />
+        I spent a long time here (with a 1 year hiatus to go work in Japan teaching business English), and rose from Systems Consultant up to UX Architect. I researched, user tested, designed and built their new travel website using Sitecore 7.5/.Net server side and a rich KnockoutJS/Require client-side experience delivering reviews, weather and nearby sights for each holiday listing. They've since moved to Angular and continued to evolve the site.<br />Other projects for them included a novel, queryable table of departures (still in use and launched at the same time, independently and coincidentally, as a similar tool from British Airyways), a customer booking management tool and numerous other customer-focussed UX systems.
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img class="img-responsive project-image" src="~/Content/assets/cricket-society.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="https://www.cricketsociety.com/" target="_blank">The Cricket Society</a></span>
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.Umbraco, Tech.AWS })
+        <br />
+        Working with my ace colleague, Cloud, we built a new Umbraco/.Net based site for the Cricket Society.  Fully responsive using Bootstrap and an attractive design to host their magazine-style content and news updates.
+    </span>
+</div>
+
+<div class="row">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+        <img class="img-responsive project-image" src="~/Content/assets/Maidstone Laser.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    </span>
+    <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="http://www.maidstone-laser.co.uk" target="_blank">Maidstone Electrolysis and Laser</a></span>
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.JQuery, Tech.AWS })
+        <br />
+        Again with Cloud, this system was created for a Maidstone-based beauty organisation. It includes full customer-relationship management tools, including the ability to query and bulk-send both SMS and Email against the AWS SES stack.  The system fully implements Microsoft Enterprise Library and supports total encryption of user data for security.
+    </span>
+</div>
