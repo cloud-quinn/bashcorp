@@ -10,19 +10,19 @@ namespace BashCorp
         public static void RegisterBundles(BundleCollection bundle)
         {
             bundle.Add(new StyleBundle("~/Content/Essential.css").Include(
-                "~/Content/bootstrap.css", 
-                "~/Content/bootstrap-theme.css",
-                "~/Content/Site.css"));
+                "~/Content/bootstrap.css"));
 
             bundle.Add(new Bundle("~/Content/Tertiary.css").Include(
+                "~/Content/bootstrap-theme.css",
+                "~/Content/Site.css",
                 "~/css/font-awesome.css",
                 "~/Content/Fonts.css"));
 
             bundle.Add(new ScriptBundle("~/Scripts/Essential.js").Include(
-                "~/Scripts/jquery-{version}.js",
-                "~/Scripts/bootstrap.js"));
+                "~/Scripts/jquery-{version}.js"));
 
             bundle.Add(new ScriptBundle("~/Scripts/Tertiary.js").Include(
+                "~/Scripts/bootstrap.js",
                 "~/Scripts/Site.js"));
 
         }

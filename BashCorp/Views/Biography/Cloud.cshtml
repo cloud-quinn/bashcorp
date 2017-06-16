@@ -1,7 +1,7 @@
-﻿@{
+﻿@using BashCorp.Models;
+@{
     ViewBag.Title = "Cloud Quinn Biography";
 }
-
 
 <div class="row">
     <span class="col-xs-4 col-sm-3 col-md-2 col-lg-1">
@@ -29,13 +29,7 @@
         <span class="header project-title" style="font-size: 2.25em; width:100%">
             <a href="https://www.kappu.earth" target="_blank">Kappu</a>
         </span>
-        <img class="skill mongodb" src="~/Content/assets/mongodb.png" alt="MongoDB document oriented databases" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill sass" src="~/Content/assets/Sass_Logo_Color.svg.png" alt="SASS CSS pre-processor" />
-        <img class="skill angularjs" src="~/Content/assets/AngularJS_logo.png" alt="AngularJS" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
-        <img class="skill nodejs" src="~/Content/assets/Node.js_logo.svg.png" alt="NodeJS server side JavaScript" />
-        <img class="skill js" src="~/Content/assets/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+        @Html.Partial("Technologies", new Tech[] { Tech.MongoDB, Tech.HTML5CSS3, Tech.SASS, Tech.Angular, Tech.JQuery, Tech.Node, Tech.JavaScript, Tech.Gulp, Tech.AWS})       
         <br />
         Working closely with the founders of this startup I built the front-end for this global multimedia e-learning platform using <strong>AngularJS</strong> and <strong>Gulp</strong>, fully tested with <strong>Jasmine</strong> on <strong>Karma</strong>. I also worked on the <strong>REST</strong>ful API using <strong>Node</strong>, <strong>Express</strong>, and <strong>Babel</strong>, the designs in <strong>Axure</strong> and <strong>Adobe creative suite</strong>, and DevOps processes using <strong>TeamCity</strong>, <strong>GitHub</strong>, <strong>Octopus Deploy</strong>, and <strong>Amazon Web Services.</strong>
     </span>
@@ -48,10 +42,7 @@
         <span class="header project-title" style="font-size: 2.25em; width:100%">
             <a href="https://www.yourpsl.com/" target="_blank">Purchasing Systems Limited.</a>
         </span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill sass" src="~/Content/assets/Sass_Logo_Color.svg.png" alt="SASS CSS pre-processor" />
-        <img class="skill angularjs" src="~/Content/assets/AngularJS_logo.png" alt="AngularJS" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.SASS, Tech.Angular, Tech.Gulp, Tech.Azure })
         <br />
         Within a <a href="http://www.clickdatabases.co.uk/" target="_blank">digital agency</a> <strong>Scrum</strong> team I worked on legacy and greenfield <strong>AngularJS</strong> apps with <strong>RESTful</strong> APIs for this international food procurement organisation taking ~£9m annual revenue. Interacting regularly with the client, I created initial designs and translated them to clean, responsive UIs. During this time I led the rebranding of all PSL’s core applications. I also shortened the release cycle, and reduced errors and response times, by implementing and training my team mates in continuous integration and delivery (<strong>TeamCity/Octopus Deploy</strong>); <strong>TDD</strong> using <strong>Jasmine</strong> on <strong>Karma</strong>; integration tests (<strong>CasperJS</strong>); <strong>Gitflow</strong> and code reviews.
     </span>
@@ -63,10 +54,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="http://www.pret-a-portrait.net/" target="_blank">Pr&ecirc;t A Portrait.</a></span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill sass" src="~/Content/assets/Sass_Logo_Color.svg.png" alt="SASS CSS pre-processor" />
-        <img class="skill angularjs" src="~/Content/assets/AngularJS_logo.png" alt="AngularJS" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.SASS, Tech.Angular, Tech.Gulp, Tech.Azure })
         <br />
         Using <strong>AngularJS</strong>, I delivered a responsive rebuild of a legacy eCommerce platform for specialist photography services as part of a <a href="http://www.clickdatabases.co.uk/" target="_blank">digital agency</a> team. As a front-end developer, I was responsible for translating initial designs into pixel-perfect markup and <strong>SASS</strong>, consuming <strong>REST</strong> APIs to provide secure and speedy data access, and writing bespoke UX interactions to apply complex business rules behind the scenes, while providing the user with a quick and simple route to conversion.
     </span>
@@ -78,12 +66,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="https://www.canterbury.ac.uk/" target="_blank">Canterbury Christ Church University</a></span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill bootstrap" src="~/Content/assets/Boostrap_logo.png" alt="Twitter Bootstrap" />
-        <img class="skill angularjs" src="~/Content/assets/AngularJS_logo.png" alt="AngularJS" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
-        <img class="skill js" src="~/Content/assets/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.Angular, Tech.Bootstrap, Tech.JQuery, Tech.JavaScript, Tech.Grunt })
         <br />
         Working as a full-stack developer within the <strong>Scrum</strong> team, I developed and consumed <strong>RESTful</strong> APIs in single-page <strong>AngularJS</strong> applications as part of a responsive rebuild of the core system for students, CLIC portal, which serves 30,000 active users weekly on both web and iOS since going live. I also provided direct support for students and staff using legacy systems.
     </span>
@@ -95,12 +78,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="https://www.totallymoney.com/" target="_blank">TotallyMoney.com</a></span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill bootstrap" src="~/Content/assets/Sass_Logo_Color.svg.png" alt="Twitter Bootstrap" />
-        <img class="skill reactjs" src="~/Content/assets/reactjs.png" alt="ReactJS" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
-        <img class="skill js" src="~/Content/assets/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.Bootstrap, Tech.React, Tech.JQuery, Tech.JavaScript, Tech.AWS})
         <br />
         Within this consumer champion FinTech organisation, I worked within the Scrum team on finance and CRM related web products in .NET and jQuery, gaining initial exposure to ReactJS and AngularJS. I also led an <a href="http://trustpilot.totallymoney.com/" target="_blank">open source project</a> to enable automated invitations for customer feedback, resulting in <a href="https://www.trustpilot.com/review/www.totallymoney.com" target="_blank">~90% positive reviews</a>  since going live.
     </span>
@@ -112,9 +90,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="https://www.cricketsociety.com/" target="_blank">The Cricket Society</a></span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill umbraco" src="~/Content/assets/umbraco.png" alt="Umbraco CMS" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.Bootstrap, Tech.AWS, Tech.Umbraco })
         <br />
         With my freelance partner, I successfully pitched and managed a project delivering a CMS solution and custom responsive design, including branding and assets, to the Cricket Society.
     </span>
@@ -126,9 +102,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="http://www.maidstone-laser.co.uk" target="_blank">Maidstone Electrolysis and Laser</a></span>
-        <img class="skill dotnet" src="~/Content/assets/800px-Microsoft_NET_logo_old.svg.png" alt="Microsoft .Net" />
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
+        @Html.Partial("Technologies", new Tech[] { Tech.DotNet, Tech.HTML5CSS3, Tech.JQuery, Tech.AWS, Tech.Bootstrap })
         <br />
         Working with my freelance partner, I created a bespoke CRM system to facilitate growth and expansion of this thriving therapeutic organisation.
     </span>
@@ -140,9 +114,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="https://www.fysst.com/" target="_blank">Funny, you should say that</a></span>
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
-        <img class="skill js" src="~/Content/assets/Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript" />
+        @Html.Partial("Technologies", new Tech[] { Tech.HTML5CSS3, Tech.Bootstrap, Tech.AWS, Tech.JavaScript, Tech.JQuery })
         <br />
         In a freelance capacity, I created a CMS and <strong>JavaScript</strong> solution for this stand-up comedy and public speaking workshop co-ordinator, including branding and assets.
     </span>
@@ -156,9 +128,7 @@
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%"><a href="http://www.thequinns.biz/" target="_blank">Le Petit Arlequin</a></span>
-        <img class="skill html5" src="~/Content/assets/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML5 and CSS3" />
-        <img class="skill bootstrap" src="~/Content/assets/Boostrap_logo.png" alt="Twitter Bootstrap" />
-        <img class="skill jquery" src="~/Content/assets/2000px-JQuery_logo_text.svg.png" alt="jQuery" />
+        @Html.Partial("Technologies", new Tech[] { Tech.HTML5CSS3, Tech.Bootstrap, Tech.JQuery })
         <br />
         I created a simple and user-friendly custom website, with jQuery animations, HTML5 video, and brand/asset design for this renowned holiday rental (<i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i> on <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g1079319-d8412539-Le_Petit_Arlequin_Gite_with_heated_pool_in_Duras-Duras_Lot_et_Garonne_Nouvelle_Aquita.html" target="_blank"> TripAdvisor</a>).
     </span>

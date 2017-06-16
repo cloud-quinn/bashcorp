@@ -152,6 +152,8 @@
     <Content Include="Content\assets\AngularJS_logo.png" />
     <Content Include="Content\assets\arlequin.png" />
     <Content Include="Content\assets\avatar-square.png" />
+    <Content Include="Content\assets\aws.png" />
+    <Content Include="Content\assets\azure.png" />
     <Content Include="Content\assets\babel.png" />
     <Content Include="Content\assets\bg3.png" />
     <Content Include="Content\assets\Boostrap_logo.png" />
@@ -161,19 +163,24 @@
     <Content Include="Content\assets\cloud-avatar.png" />
     <Content Include="Content\assets\Cloud.svg" />
     <Content Include="Content\assets\CSS3_and_HTML5_logos_and_wordmarks.svg.png" />
+    <Content Include="Content\assets\grunt.png" />
+    <Content Include="Content\assets\gulp.png" />
     <Content Include="Content\assets\kaylee-avatar.png" />
     <Content Include="Content\assets\cricket-society.png" />
     <Content Include="Content\assets\fysst.png" />
     <Content Include="Content\assets\kappu.png" />
     <Content Include="Content\assets\Kaylee blink.svg" />
     <Content Include="Content\assets\Kaylee.svg" />
+    <Content Include="Content\assets\knockoutjs.png" />
     <Content Include="Content\assets\Maidstone Laser.png" />
     <Content Include="Content\assets\mocha.png" />
     <Content Include="Content\assets\mongodb.png" />
     <Content Include="Content\assets\Node.js_logo.svg.png" />
     <Content Include="Content\assets\pret.png" />
+    <Content Include="Content\assets\Project ATLAS.png" />
     <Content Include="Content\assets\psl.png" />
     <Content Include="Content\assets\reactjs.png" />
+    <Content Include="Content\assets\require.png" />
     <Content Include="Content\assets\Sass_Logo_Color.svg.png" />
     <Content Include="Content\assets\screens-no-news-pre-arrival.png" />
     <Content Include="Content\assets\sitecore_logo.gif" />
@@ -213,11 +220,9 @@
     </Content>
     <Content Include="Connected Services\Application Insights\ConnectedService.json" />
     <None Include="Properties\PublishProfiles\BashCorp20170614104849 - Web Deploy.pubxml" />
-    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.1.1.js" />
-    <Content Include="Scripts\jquery-3.1.1.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\jquery-1.12.4.js" />
+    <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\Site.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -233,6 +238,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Skill.cs" />
+    <Compile Include="Models\SkillsList.cs" />
+    <Compile Include="Models\Tech.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -245,12 +253,13 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Views\Services\Index.cshtml" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
-    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Shared\Navigation.cshtml" />
     <Content Include="Views\Biography\Cloud.cshtml" />
     <Content Include="Views\Biography\Kaylee.cshtml" />
+    <Content Include="Views\Shared\Technologies.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Skill.cshtml" />
+    <Content Include="Scripts\jquery-1.12.4.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -260,7 +269,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

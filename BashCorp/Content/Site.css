@@ -18,6 +18,14 @@ h1, h2, h3, h4, h5, h6, .small-title, .header {
     font-family: 'VT323', monospace !important;
 }
 
+.skillPopup {
+    position: absolute;
+    width: 400px;
+    background: #fff;
+    border: 1px solid black;
+    box-shadow: 0 0 5px #000;
+}
+
 .navbar, .navbar-collapse {
     border: none !important;
     box-shadow: none !important;
