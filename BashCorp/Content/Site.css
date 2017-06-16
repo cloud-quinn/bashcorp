@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6, .small-title, .header {
     font-family: 'VT323', monospace !important;
 }
 
+.desktop-only {
+    display: none;
+    }
 .skillPopup {
     position: absolute;
     width: 400px;
@@ -30,10 +33,14 @@ h1, h2, h3, h4, h5, h6, .small-title, .header {
     border: none !important;
     box-shadow: none !important;
     background: #F5F5F5;
+}
+
+.navbar {
     background: -moz-linear-gradient(top, rgba(245,245,245,1) 65%, rgba(245,245,245,0) 100%);
     background: -webkit-linear-gradient(top, rgba(245,245,245,1) 65%,rgba(245,245,245,0) 100%);
     background: linear-gradient(to bottom, rgba(245,245,245,1) 65%,rgba(245,245,245,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F5F5', endColorstr='#F5F5F5',GradientType=0 );
+    z-index: 999 !important;
 }
 
 .navbar {
@@ -239,6 +246,13 @@ ul {
     .skill {
         float: right;
     }
+
+    .navbar-collapse {
+        background: -moz-linear-gradient(top, rgba(245,245,245,1) 65%, rgba(245,245,245,0) 100%);
+        background: -webkit-linear-gradient(top, rgba(245,245,245,1) 65%,rgba(245,245,245,0) 100%);
+        background: linear-gradient(to bottom, rgba(245,245,245,1) 65%,rgba(245,245,245,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F5F5', endColorstr='#F5F5F5',GradientType=0 );
+    }
 }
 
 @media(min-width: 900px) {
@@ -250,6 +264,10 @@ ul {
 @media(min-width: 1024px) {
     .footer-text {
         transform: translateY(-30px) translateX(calc(100vw / 4));
+    }
+
+    .desktop-only {
+        display: block;
     }
 }
 
