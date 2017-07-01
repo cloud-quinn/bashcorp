@@ -165,10 +165,12 @@
     <Content Include="Content\assets\CSS3_and_HTML5_logos_and_wordmarks.svg.png" />
     <Content Include="Content\assets\grunt.png" />
     <Content Include="Content\assets\gulp.png" />
+    <Content Include="Content\assets\kappu-account.png" />
+    <Content Include="Content\assets\kappu-carousel.png" />
+    <Content Include="Content\assets\kappu.png" />
     <Content Include="Content\assets\kaylee-avatar.png" />
     <Content Include="Content\assets\cricket-society.png" />
     <Content Include="Content\assets\fysst.png" />
-    <Content Include="Content\assets\kappu.png" />
     <Content Include="Content\assets\Kaylee blink.svg" />
     <Content Include="Content\assets\Kaylee.svg" />
     <Content Include="Content\assets\knockoutjs.png" />
@@ -224,6 +226,7 @@
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
+    <Content Include="Scripts\lightbox.js" />
     <Content Include="Scripts\Site.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -299,6 +302,13 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

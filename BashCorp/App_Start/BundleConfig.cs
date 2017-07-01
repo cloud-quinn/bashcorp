@@ -23,7 +23,8 @@ namespace BashCorp
 
             bundle.Add(new ScriptBundle("~/Scripts/Tertiary.js").Include(
                 "~/Scripts/bootstrap.js",
-                "~/Scripts/Site.js"));
+                "~/Scripts/Site.js",
+                "~/Scripts/lightbox.js"));
 
         }
     }

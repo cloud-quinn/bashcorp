@@ -20,13 +20,67 @@ h1, h2, h3, h4, h5, h6, .small-title, .header {
 
 .desktop-only {
     display: none;
-    }
+}
+
 .skillPopup {
     position: absolute;
     width: 400px;
     background: #fff;
     border: 1px solid black;
     box-shadow: 0 0 5px #000;
+}
+
+.lightbox-trigger {
+    cursor: pointer;
+}
+
+.modal-background {
+    background-color: #000;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.light-box {
+    position: fixed;
+    top: 33%;
+    left: 30px;
+    z-index: 1000;
+}
+
+    .light-box, .light-box img {
+        width: 335px;
+    }
+
+.light-box, .modal-background {
+    display: none;
+}
+
+.close-light-box-cross {
+    background: #fff;
+    opacity: 0.7;
+    border-radius: 50%;
+    margin: -20px 0 0 340px;
+    z-index: 1001;
+    width: 19px !important;
+    height: 18px;
+}
+
+.close-button {
+    margin-left: 4px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.close-light-box-text {
+    margin: 203px 0 0 150px;
+    z-index: 1001;
+    color: #fff;
+    text-decoration: underline;
 }
 
 .navbar, .navbar-collapse {
@@ -145,18 +199,6 @@ ul {
     height: 20px;
 }
 
-/*.sass, .mongodb, .bootstrap {
-    height: 19px;
-}
-
-.dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
-    height: 26px;
-}
-
-.jquery, .js {
-    height: 14px;
-}*/
-
 .project-image {
     width: 90%;
 }
@@ -231,14 +273,6 @@ ul {
         margin-right: 1em;
     }
 
-    /*.dotnet, .html5, .angularjs, .nodejs, .reactjs, .umbraco {
-        height: 30px;
-    }
-
-    .sass, .mongodb, .bootstrap {
-        height: 25px;
-    }*/
-
     .jquery, .js {
         height: 20px;
     }
@@ -253,11 +287,28 @@ ul {
         background: linear-gradient(to bottom, rgba(245,245,245,1) 65%,rgba(245,245,245,0) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F5F5F5', endColorstr='#F5F5F5',GradientType=0 );
     }
+
+    .light-box {
+        width: 500px;
+        left: calc(15vw);
+    }
+
+    .close-light-box-text {
+        margin: 303px 0 0 240px;
+    }
+
+    .close-light-box-cross {
+        margin: -20px 0 0 502px;
+    }
 }
 
 @media(min-width: 900px) {
     .footer-text {
         transform: translateY(-30px) translateX(calc(100vw / 5));
+    }
+
+    .light-box {
+        left: calc(25vw);
     }
 }
 
@@ -278,6 +329,10 @@ ul {
 
     .bg {
         width: 100%;
+    }
+
+    .light-box {
+        left: calc(30vw);
     }
 }
 

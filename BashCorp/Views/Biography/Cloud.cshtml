@@ -22,8 +22,8 @@
 <h2 class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Software projects</h2>
 
 <div class="row">
-    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="z-index: -1">
-        <img class="img-responsive project-image" src="~/Content/assets/kappu.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4 lightbox-trigger" id="kappu">
+        <img class="img-responsive project-image" src="~/Content/assets/kappu.png" style="z-index: -1; margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
         <span class="header project-title" style="font-size: 2.25em; width:100%">
@@ -61,7 +61,7 @@
 </div>
 
 <div class="row">
-    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+    <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4 lightbox-trigger" id="cccu">
         <img class="img-responsive project-image" src="~/Content/assets/Student Portal.png" style="background: #fff; margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
     </span>
     <span class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -120,8 +120,6 @@
     </span>
 </div>
 
-
-
 <div class="row">
     <span class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
         <img class="img-responsive project-image" src="~/Content/assets/arlequin.png" style="margin: 0.6em 0 0.4em 0; border-radius: 3px; -webkit-box-shadow: 2px 2px 1px 1px #353434; -moz-box-shadow: 2px 2px 1px 1px #353434; box-shadow: 2px 2px 1px 1px #353434;" />
@@ -133,3 +131,19 @@
         I created a simple and user-friendly custom website, with jQuery animations, HTML5 video, and brand/asset design for this renowned holiday rental (<i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i><i class="fa fa-star fa-xs"></i> on <a href="https://www.tripadvisor.co.uk/VacationRentalReview-g1079319-d8412539-Le_Petit_Arlequin_Gite_with_heated_pool_in_Duras-Duras_Lot_et_Garonne_Nouvelle_Aquita.html" target="_blank"> TripAdvisor</a>).
     </span>
 </div>
+
+
+<div class="light-box light-box-kappu" id="light-box-kappu">
+    <img src="~/Content/assets/kappu.png" />
+    <img src="~/Content/assets/kappu-carousel.png" />
+    <img src="~/Content/assets/kappu-account.png" />
+</div>
+
+<div class="light-box light-box-cccu" id="light-box-cccu">
+    <img src="~/Content/assets/Student Portal.png" />
+    <img src="~/Content/assets/cccu.png" />
+</div>
+<a href="" class="light-box close-light-box close-light-box-text">close</a>
+@*<div class="light-box close-light-box close-light-box-cross"><i class="fa fa-times close-button"></i></div>*@
+
+<div class="modal-background"></div>
