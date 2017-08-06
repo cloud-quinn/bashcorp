@@ -165,6 +165,8 @@
     <Content Include="Content\assets\CSS3_and_HTML5_logos_and_wordmarks.svg.png" />
     <Content Include="Content\assets\grunt.png" />
     <Content Include="Content\assets\gulp.png" />
+    <Content Include="Content\assets\kappu-1.png" />
+    <Content Include="Content\assets\kappu-2.png" />
     <Content Include="Content\assets\kappu-account.png" />
     <Content Include="Content\assets\kappu-carousel.png" />
     <Content Include="Content\assets\kappu.png" />
