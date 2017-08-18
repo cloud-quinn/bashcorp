@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>BashCorp Ltd. Professional IT Solutions</title>
+        <meta charset="unicode">
+        <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/favicons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="assets/favicons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="assets/favicons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="assets/favicons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="assets/favicons/mstile-310x310.png" />
+        <environment names="production">
+            <link rel="stylesheet" type="text/css" href="~/css/site.min.css">
+        </environment>
+		<environment names="development">
+		    <link rel="stylesheet" type="text/css" href="~/css/site.css">
+		</environment>
+    </head>
+    <body class="background">
+        <div class="banner top"></div>
+        <div class="banner bottom"></div>
+        <div class="view pane"></div>
+        <div class="heading pane">
+            <ul role="menubar" class="horizontalList buttons topNav">
+                <li><a href="#" role="menuitem">Contact</a></li>
+                <li><a href="#" role="menuitem">Services</a></li>
+                <li><a href="#" class="submenutrigger" role="menuitem" aria-haspopup="true" aria-expanded="false">The Team&nbsp;<span class="icon downArrow"></span></a>
+                    <ul role="menu" class="sr-only submenu">
+                        <li>
+                            <a href="#" role="menuitem">Cloud</a>
+                        </li>
+                        <li>
+                            <a href="#" role="menuitem">Kaylee</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <span class="bold phone" itemscope itemtype="https://schema.org/Organization">
+                <h1 class="sr-only" itemprop="name">BashCorp Ltd.</h1>
+                <span itemprop="telephone">
+                +44 (0) 1233 659 866</span>
+            </span>
+        </div>
+        <div class="glass pane">
+        </div>
+        <div class="content pane">
+
+        @RenderBody()
+
+
+        </div>
+        <div class="footer">
+        <p>Proud members and supporters of the LGBTQIA* community <abbr title="LGBT Rainbow Flag of Sexualities and Gender Identities">🏳️‍🌈</abbr> <abbr title="Intersex/Androgynous Community">⚥</abbr> <abbr class="Our brothers, sisters and others in the Transgender Community">⚧</abbr> <abbr title="The Neutral/Genderless Community">⚲</abbr> <abbr title="The Gay Male Community">⚣</abbr> <abbr title="The Gay Female Community">⚢</abbr> <abbr title="The Bisexual and Pansexual Community">⚥⚥</abbr> <abbr title="The Asexual Community">⚪</abbr><br>
+            &copy; BashCorp Ltd. 2017. Registered company 10727538. 776-778 International House, Barking Road, London, E13 9PJ.</p>
+        </div>
+
+        <environment  names="development">
+            <script src="~/js/site.js"></script>			
+		</environment>
+		
+        <environment  names="production">
+            <script src="~/js/site.min.js"></script>            
+        </environment>
+        <script src="https://use.typekit.net/dqn1ahe.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>
