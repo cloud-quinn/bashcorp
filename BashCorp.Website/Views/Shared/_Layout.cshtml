@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
     <head>
-        <title>BashCorp Ltd. Professional IT Solutions</title>
+        <title>@ViewData["Title"]</title>
         <meta charset="unicode">
         <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32" />
@@ -27,15 +27,15 @@
         <div class="view pane"></div>
         <div class="heading pane">
             <ul role="menubar" class="horizontalList buttons topNav">
-                <li><a href="#" role="menuitem">Contact</a></li>
-                <li><a href="#" role="menuitem">Services</a></li>
+                <li><a href="@Url.RouteUrl(new { Controller="Contact", Action="Index" })" role="menuitem">Contact</a></li>
+                <li><a href="@Url.RouteUrl(new { Controller="Services", Action="Index" })" role="menuitem">Services</a></li>
                 <li><a href="#" class="submenutrigger" role="menuitem" aria-haspopup="true" aria-expanded="false">The Team&nbsp;<span class="icon downArrow"></span></a>
                     <ul role="menu" class="sr-only submenu">
                         <li>
-                            <a href="#" role="menuitem">Cloud</a>
+                            <a href="@Url.RouteUrl(new { Controller="Team", Action="Cloud" })" role="menuitem">Cloud</a>
                         </li>
                         <li>
-                            <a href="#" role="menuitem">Kaylee</a>
+                            <a href="@Url.RouteUrl(new { Controller="Team", Action="Kaylee" })" role="menuitem">Kaylee</a>
                         </li>
                     </ul>
                 </li>
