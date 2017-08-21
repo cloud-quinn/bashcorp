@@ -22,10 +22,10 @@
 		</environment>
     </head>
     <body class="background">
-        <div class="banner top"></div>
-        <div class="banner bottom"></div>
-        <div class="view pane"></div>
-        <div class="heading pane">
+        <div class="banner top hideWhileLoading"></div>
+        <div class="banner bottom hideWhileLoading"></div>
+        <div class="view pane hideWhileLoading"></div>
+        <div class="heading pane hideWhileLoading">
             <ul role="menubar" class="horizontalList buttons topNav">
                 <li><a href="@Url.RouteUrl(new { Controller="Contact", Action="Index" })" role="menuitem">Contact</a></li>
                 <li><a href="@Url.RouteUrl(new { Controller="Services", Action="Index" })" role="menuitem">Services</a></li>
@@ -46,15 +46,15 @@
                 +44 (0) 1233 659 866</span>
             </span>
         </div>
-        <div class="glass pane">
+        <div class="glass pane hideWhileLoading">
         </div>
-        <div class="content pane">
+        <div class="content pane hideWhileLoading">
 
         @RenderBody()
 
 
         </div>
-        <div class="footer">
+        <div class="footer hideWhileLoading">
         <p>
             &copy; BashCorp Ltd. 2017. Registered company 10727538. 776-778 International House, Barking Road, London, E13 9PJ.</p>
         </div>

@@ -64,7 +64,7 @@ body {
 
 .heading {
     top: 25px;
-    z-index: 3;
+    z-index: 999;
     background: url('../images/Logo.png') top left no-repeat;
     min-height: 75px;
     border-radius: 2px 2px 0 0;
@@ -187,6 +187,10 @@ p, h1, h2, h3, h4, h5 {
     width: 100%;
 }
 
+.hideWhileLoading {
+    visibility: hidden;
+}
+
     .footer p {
         text-align: center;
     }
@@ -237,9 +241,10 @@ p, h1, h2, h3, h4, h5 {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
-    background-size: 40px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(1px);
+    background-size: 30px;
     display: inline-block;
     background-image: url('../assets/icons.svg');
     background-repeat: no-repeat;
@@ -247,4 +252,16 @@ p, h1, h2, h3, h4, h5 {
 
 .downArrow {
     background-position: 0, 0;
+}
+
+.rotate-180 {
+    -webkit-transform: rotate(180deg); /* Chrome and other webkit browsers */
+    -moz-transform: rotate(180deg); /* FF */
+    -o-transform: rotate(180deg); /* Opera */
+    -ms-transform: rotate(180deg); /* IE9 */
+    transform: rotate(180deg); /* W3C compliant browsers */
+}
+
+.upArrow {
+    transform: rotate(180deg) translateY(-2px);
 }

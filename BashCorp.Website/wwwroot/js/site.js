@@ -17,7 +17,10 @@
                 glass.style.height = `${height}px`;
                 view.style.height = `${height + header.clientHeight}px`;
                 footer.style.top = bottomBanner.style.top = `${height + header.clientHeight - 50}px`;
-
+                const hideWhileLoading = document.getElementsByClassName('hideWhileLoading');
+                Array.from(hideWhileLoading).forEach(x => {
+                    x.style.visibility = "visible";
+                });
             };
 
             const resizeGallery = ()=> {
@@ -59,7 +62,18 @@
                     const menus = t.parentElement.getElementsByClassName('submenu');
                     t.onclick = () => {
                         Array.from(menus).forEach(m => {
-                            m.classList.remove('sr-only');
+                            if (m.classList.contains('sr-only')) {
+                                m.classList.remove('sr-only');
+                            }
+                            else {
+                                m.classList.add('sr-only');
+                            }
+                            if (t.children && t.children[0].classList.contains('rotate-180')) {
+                                t.children[0].classList.remove('rotate-180', 'upArrow');
+                            }
+                            else if (t.children && !t.children[0].classList.contains('rotate-180')) {
+                                t.children[0].classList.add('rotate-180', 'upArrow');
+                            }
                             const initialHeight = m.clientHeight;
                             m.style.height = '0px';
                             slideDownElement(m, initialHeight);
