@@ -75,7 +75,7 @@
                 const carouselFrame = document.getElementById('frame');
                 setInterval(resize, 50);
                 const galleryBuilder = () => {
-                    if (carouselFrame.complete)
+                    if (carouselFrame && carouselFrame.complete)
                         resizeGallery();
 
                     setTimeout(galleryBuilder, 50);
