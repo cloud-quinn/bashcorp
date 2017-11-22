@@ -1,0 +1,385 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>BashCorp Ltd. Professional IT Solutions</title>
+		<meta charset="unicode">
+		<link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="assets/favicons/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="&nbsp;"/>
+		<meta name="msapplication-TileColor" content="#FFFFFF" />
+		<meta name="msapplication-TileImage" content="assets/favicons/mstile-144x144.png" />
+		<meta name="msapplication-square70x70logo" content="assets/favicons/mstile-70x70.png" />
+		<meta name="msapplication-square150x150logo" content="assets/favicons/mstile-150x150.png" />
+		<meta name="msapplication-wide310x150logo" content="assets/favicons/mstile-310x150.png" />
+		<meta name="msapplication-square310x310logo" content="assets/favicons/mstile-310x310.png" />
+		<style type="text/css">
+		.sr-only{
+			height: 0;
+			width: 0;
+			position: absolute;
+			top: -10000px;
+		}
+		body{
+		font-family: "skolar-sans-latin", 'verdana', 'arial', sans-serif;
+		font-size: 22px;
+		color: #333;
+		}
+		.background{
+			background: url('Tokyo.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			padding: 0;
+			margin: 0;
+			position: relative;
+		}
+		.banner{
+			background:  url('banner.png') top left repeat;
+			position: absolute;
+			left: 0;
+			height: 3em;
+			width: 100%;
+			z-index: 2;
+		}
+		.top{
+			top: 40px;
+		}
+		.bottom{
+			bottom: 40px;
+		}
+		.pane{
+			top: 20px;
+			position: absolute;
+			min-height: calc(96vh);
+			width: 95%;
+		}
+		.phone{
+			position: absolute;
+			right: 1em;
+			top: 1em;
+			display: none;
+		}
+		.view{
+			z-index: 1;
+			background: url('View.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.heading{
+			top:  25px;
+			z-index: 3;
+			background: url('Logo.png') top left no-repeat;
+			
+			min-height: 75px;
+			border-radius: 2px 2px 0 0;
+		}
+		.glass{
+			top:  100px;
+			z-index: 3;
+			background: #f6f6f6;
+			opacity: 0.7;
+			min-height: calc(85vh);
+			border-radius: 0 0 2px 2px;
+		}
+		.content{
+			top: 100px;
+			z-index: 5;
+			padding-top: 2em;
+			padding-bottom: 5em;
+		}
+		.content > p:nth-child(3):first-letter{
+			font-size: 2em;
+			float: left;
+			margin-top:-15px
+		}
+
+		h1,h2,h3,h4,h5{
+			font-family: "univia-pro", 'verdana', 'arial', sans-serif;
+			font-weight: 1200;
+			font-size: 2.5em;
+		}
+
+		h2,h3,h4,h5{
+			font-size: 1.5em;
+		}
+
+		h3,h4,h5{
+			font-size: 1.2em;
+			font-weight: 600;
+		}
+
+		h4,h5{
+			border-bottom: 2px solid #888;
+			font-size: 1em;
+		}
+
+		h5{
+			color: #555;
+			border-bottom: 1px solid #999;
+		}
+
+		p,h1,h2,h3,h4,h5{
+			margin: 10px 50px 20px 50px;
+			text-align: justify;
+		}
+		.bold{
+			font-family: "univia-pro", 'verdana', 'arial', sans-serif;
+			font-weight: bold;
+/* 			font-size: 1.2em; */
+			margin: 0;
+			padding: 0;
+		}
+		.horizontalList{
+			list-style: none;
+			display: flex;
+		}
+		.horizontalList li{
+			list-style: none;
+			margin: 0 0.5em 0 0.5em;
+			padding: 0;
+		}
+		.submenu{
+			position: relative;
+		}
+		.buttons a{
+			text-decoration: none;
+			border-radius: 1px;
+			padding: 0 1em 0 1em;
+			margin: 0 0.5em 0.5em 0.5em;
+			color: #333;
+			background: #f6f6f6;
+			opacity: 0.7;
+			display: flex;
+			align-items: center;
+			height: 2em;
+		}
+		.buttons a:hover{
+			color: #000;
+			background: #fff;
+			opacity: 0.7;
+		}
+			.buttons a:active{
+			color: #000;
+			background: #fff;
+			opacity: 1;
+		}
+		.topNav{
+			left: 250px;
+			top: 1em;
+			position: relative;
+			font-size: 0.7em;
+			width: 600px;
+			display: none;
+			overflow: hidden;
+		}
+		.footer{
+			font-size: 0.7em;
+			position: absolute;
+			z-index: 4;
+			width: 100%;
+		}
+
+		.footer p{
+			text-align: center;
+		}
+
+		.carousel{
+			display: none;
+		}
+		.carousel .frame{
+			width: 70%;
+		}
+		.carousel .screen{
+			position: absolute;
+			display: none;
+		}
+		@media(min-width:768px){
+			.pane{
+				width: 768px;
+			}
+			.phone{
+				display: none;
+			}
+			.topNav{
+				display: flex;
+			}
+			.carousel{
+				display: block;
+			}
+		}
+		@media(min-width:1024px){
+			.pane{
+				width: 1024px;
+			}
+			.phone{
+				display: block
+			}
+			.topNav{
+				display: flex;
+			}
+		}
+
+		.icon{
+			width: 20px;
+			height: 20px;
+			background-size: 40px;
+			display:inline-block;
+			background-image: url('assets/icons.svg');
+			background-repeat: no-repeat;
+		}
+
+		.downArrow{
+			
+			background-position:  0, 0;
+		}
+
+		</style>
+	</head>
+	<body class="background">
+		
+		<div class="banner top"></div>
+		<div class="banner bottom"></div>
+		<div class="view pane"></div>
+		<div class="heading pane">
+			<ul role="menubar" class="horizontalList buttons topNav">
+				<li><a href="#" role="menuitem">Contact</a></li>
+				<li><a href="#" role="menuitem">Services</a></li>
+				<li><a href="#" class="submenutrigger" role="menuitem" aria-haspopup="true" aria-expanded="false">The Team&nbsp;<span class="icon downArrow"></span></a>
+					<ul role="menu" class="sr-only submenu">
+						<li>
+							<a href="#" role="menuitem">Cloud</a>
+						</li>
+						<li>
+							<a href="#" role="menuitem">Kaylee</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<span class="bold phone" itemscope itemtype="https://schema.org/Organization">
+				<h1 class="sr-only" itemprop="name">BashCorp Ltd.</h1>
+				<span itemprop="telephone">
+				+44 (0) 1233 659 866</span>
+			</span>
+		</div>
+		<div class="glass pane">
+		</div>
+		<div class="content pane">
+			<div class="carousel">
+				<img src="Laptop.png" alt="" id="frame" />
+				<div class="slide">
+					<img src="slide1.jpg" alt="The Kappu website is a..." class="screen" />
+				</div>
+			</div>
+			<h1>Jabberwocky</h1>
+			<p>Twas brillig and the slithy toves did gyre and gymbol in the wabe, all mimsy were the borogroves and the momeraths outgrabe.  Beware the Jabberwock, my son!  The jaws that bite&hellip; the claws that catch!  Beware the Jubjub bird and shun the frumious Bandersnatch!</p>
+			<h2>Part II</h2>
+			<p>He took his vorpal sword in hand, long time the manxsome foe he soight.  So rested he by the TumTum tree and stood awhile in thought.  And, as in uffish thought he stood, the Jabberwock with eyes of flame came whiffling through the Tulgey Wood and burbled as it came.</p>
+			<h3>Part III</h3>
+			<p>One two!  One two!  And through and through!  The vorpal blade went snicker-snack!  He left it dead and, with its head, came galumphing back.  And hast thou slain the Jabberwock?  Come to my arms my beamish boy, oh frabjuous day!  Callooh Callay!  He chortled in his joy.</p>
+			<h4>Part IV</h4>
+			<p>T'was brillig and the slithy toves did gyre and gymbol in the wabe, all mimsy were the borogroves and the momeraths outgrabe.</p>
+			<h5>Part V</h5>
+			<p>Copy text</p>
+
+		</div>
+		<div class="footer">
+		<p>Proud members and supporters of the LGBTQIA* community <abbr title="LGBT Rainbow Flag of Sexualities and Gender Identities">🏳️‍🌈</abbr> <abbr title="Intersex/Androgynous Community">⚥</abbr> <abbr class="Our brothers, sisters and others in the Transgender Community">⚧</abbr> <abbr title="The Neutral/Genderless Community">⚲</abbr> <abbr title="The Gay Male Community">⚣</abbr> <abbr title="The Gay Female Community">⚢</abbr> <abbr title="The Bisexual and Pansexual Community">⚥⚥</abbr> <abbr title="The Asexual Community">⚪</abbr><br>
+			&copy; BashCorp Ltd. 2017. Registered company 10727538. 776-778 International House, Barking Road, London, E13 9PJ.</p>
+		</div>
+		<script type="text/javascript">
+			const resize = () => {
+				const width = window.innerWidth;
+				const elements = document.getElementsByClassName('pane');
+				Array.from(elements).forEach(i => {
+					const left = Math.floor((width - i.clientWidth) / 2)
+					i.style.left = left + "px"
+				});
+				
+				const footer = document.getElementsByClassName('footer')[0];
+				const bottomBanner = document.getElementsByClassName('bottom')[0];
+				const header = document.getElementsByClassName('heading')[0];
+				const glass = document.getElementsByClassName('glass')[0];
+				const view = document.getElementsByClassName('view')[0];
+				const height = document.getElementsByClassName('content')[0].clientHeight;
+				const glassHeight = view.clientHeight - header.clientHeight;
+				glass.style['min-height'] = `${glassHeight}px`
+				glass.style.height = `${height}px`;
+				view.style.height = `${height + header.clientHeight}px`;
+				footer.style.top = bottomBanner.style.top = `${height + header.clientHeight - 50}px`;
+
+			};
+
+			const resizeGallery = ()=> {
+				const slides = document.getElementsByClassName('slide');
+				const carouselFrame = document.getElementById('frame');
+				const topLeft = Math.floor(carouselFrame.clientLeft + (carouselFrame.clientWidth * 0.187));
+				const top = Math.floor(carouselFrame.clientTop + (carouselFrame.clientHeight * 0.154));
+				const screenWidth = Math.floor(carouselFrame.clientWidth * 0.63);
+
+				Array.from(slides).forEach(s => {
+
+					const screen = s.getElementsByClassName('screen')[0];
+					screen.style.left = `${topLeft}px`;
+					screen.style.top = `${top}px`;
+					screen.style.width = `${screenWidth}px`;
+					screen.style.display = "block";
+				});
+			}
+
+			const adjustElementHeight = (element, newHeight, initialHeight) => {
+				if (element.clientHeight >= initialHeight)
+					return;
+
+				element.style.height =  `${element.clientHeight + newHeight}px`;
+				setTimeout(()=> {
+					adjustElementHeight(element, newHeight, initialHeight);
+				}, 10);
+			};
+
+			const slideDownElement = (element, initialHeight) => {
+				element.style.height = '0px';		
+				const factor = Math.floor(initialHeight / 5);
+				adjustElementHeight(element, factor, initialHeight);
+			};
+
+			const setMenu = ()=> {
+				const triggers = document.getElementsByClassName('submenutrigger');
+				Array.from(triggers).forEach(t => {
+					const menus = t.parentElement.getElementsByClassName('submenu');
+					t.onclick = () => {
+						Array.from(menus).forEach(m => {
+							m.classList.remove('sr-only');
+							const initialHeight = m.clientHeight;
+							m.style.height = '0px';
+							slideDownElement(m, initialHeight);
+						});
+
+						return false;
+					}
+				});
+			};
+
+			window.onresize = resize;
+			document.addEventListener("DOMContentLoaded", () => {
+				const carouselFrame = document.getElementById('frame');
+				setInterval(resize, 50);
+				const galleryBuilder = () => {
+					if (carouselFrame.complete)
+						resizeGallery();
+
+					setTimeout(galleryBuilder, 50);
+				};
+
+				galleryBuilder();
+				setMenu();
+			})
+		</script>
+<!-- 		<script src="https://use.typekit.net/dqn1ahe.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script> -->
+	</body>
+</html>

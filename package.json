@@ -1,0 +1,11 @@
+{
+  "name": "bashcorpltd",
+  "version": "2.0.0",
+  "description": "The BashCorp Ltd. homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
