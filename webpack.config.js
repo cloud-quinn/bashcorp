@@ -29,5 +29,8 @@ module.exports = {
   },
   plugins: [
     extractLess
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx']
+  }
 }

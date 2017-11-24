@@ -4,7 +4,8 @@
   "description": "The BashCorp Ltd. homepage",
   "main": "dist/server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "webpack --watch & nodemon dist/server.js"
   },
   "author": "BashCorp Ltd.",
   "license": "ISC",
