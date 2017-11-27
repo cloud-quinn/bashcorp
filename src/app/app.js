@@ -10,23 +10,32 @@ import bashCorp from '../reducers'
 import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-
 import CHome from '../containers/home'
 import Footer from './components/footer'
 import Frame from './components/frame'
 import Grid from './components/grid'
+import TopNavigation from './components/topNavigation'
+import Logo from './components/logo'
+import Phone from './components/phone'
 
 const store = createStore(bashCorp)
 
 ReactDOM.render(
   <Provider store={store}>
-    <Grid>
-      <Frame>
-        <Router>
+    <Router>
+      <Grid className="grid">
+        <Logo className="logo" />
+        <Phone className="phoneNumber" />
+        <TopNavigation className="site-navigation">
+          <ul>
+            <li><Link to="/">Home</Link></li>
+          </ul>
+        </TopNavigation>
+        <Frame className="frame">
           <Route path="/" component={CHome} />
-        </Router>
-      </Frame>
-      <Footer className="last-row center-column center-text small pad" />
-    </Grid>
+        </Frame>
+        <Footer className="footer" />
+      </Grid>
+    </Router>
   </Provider>, document.getElementById('root')
 )

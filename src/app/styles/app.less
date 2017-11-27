@@ -10,11 +10,6 @@ body{
     width: 100%;
 }
 
-.subgrid{
-    display: inline-grid;
-    width: 100%;
-}
-
 .background-view{
     background: url('/img/Tokyo.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -113,9 +108,137 @@ body{
     padding: 1em;
 }
 
+.middle{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.right-column{
+    grid-column: 3;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.center-text{
+    text-align: center;
+    justify-content: center;
+}
+
+.small{
+    font-size: 0.8em;
+}
+
+.phone{
+    font-size:1.3em;
+    font-weight: bold;
+}
+
+.phone::before{
+    content: '📞 ';
+}
+
+.tokyo-background{
+    .span-all-rows;
+    .span-all-columns;
+    .full-height;
+    .background-view;
+}
+
+.tokyo-frosted{
+    .span-all-rows;
+    .center-column;
+    .full-height;
+    .blurred-view;
+}
+
+.footer{
+    .last-row;
+    .center-column;
+    .center-text;
+    .small;
+    .pad;
+}
+
+.logo{
+    .header;
+    .center-column;
+    .logo;
+    .thick;
+}
+
+.frame{
+    .skip-first-row;
+    .center-column;
+    .full-height;
+    .pad;
+}
+
+.phoneNumber{
+    .header;
+    .thick;
+    .middle;
+    .right-column;
+}
+
+.site-navigation{
+    .header;
+    .thick;
+    .middle;
+    .center-column;
+    .center-text;
+}
+
+.banner-bar{
+    .header;
+    .span-all-columns;
+    .banner;
+}
+
+.banner-bar-bottom-margin{
+    .header-padding;
+    .span-all-columns;
+    .banner;
+    .thin;
+}
+
+.logo-margin{
+    .logo;
+    .header-padding;
+    .center-column;
+    .thin;    
+}
+
+.page-background{
+    .skip-first-row;
+    .center-column;
+    .full-height;
+    .glass-view;
+}
+
+.banner-bar-top-margin{
+    .top-padding;
+    .center-column;
+    .glass-view;
+    .thin;
+}
+
+.page-margin{
+    .top-margin;
+    .span-all-columns;
+    .thin;
+}
+
 @media(min-width:320px){
     .grid{
         grid-template-columns: 5% 5% auto 5% 5%;
+    }
+    .site-navigation{
+        grid-row:5;
+    }
+    .frame{
+        grid-row-start:6;
+        grid-row-end:10;
     }
 }
 @media(min-width:480px){
@@ -131,33 +254,12 @@ body{
 @media(min-width:1024px){
     .grid{
         grid-template-columns: auto 5% 700px 5% auto;
+    };
+    .site-navigation{
+        grid-row:4;
     }
-}
-
-.middle{
-    display:flex;
-    align-items: center;
-}
-
-.right-column{
-    grid-column: 3;
-    text-align: right;
-    margin-right: 1em;
-}
-
-.center-text{
-    text-align: center;
-}
-
-.small{
-    font-size: 0.8em;
-}
-
-.phone{
-    font-size:1.3em;
-    font-weight: bold;
-}
-
-.phone::before{
-    content: '📞 ';
+    .frame{
+        grid-row-start: 5;
+        grid-row-end:10;
+    }
 }

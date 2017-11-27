@@ -4,7 +4,7 @@ class Frame extends React.Component {
 
   render() {
       return(
-            <div className="skip-first-row center-column full-heigh pad">
+            <div className={this.props.className}>
               {this.props.children}
             </div>
       )}
