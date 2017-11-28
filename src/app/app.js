@@ -10,7 +10,7 @@ import bashCorp from '../reducers'
 import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 
-import CHome from '../containers/home'
+import Home from './components/home'
 import Footer from './components/footer'
 import Frame from './components/frame'
 import Grid from './components/grid'
@@ -29,10 +29,13 @@ ReactDOM.render(
         <TopNavigation className="site-navigation">
           <ul>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/">Services</Link></li>
+            <li><Link to="/">Portfolio</Link></li>
+            <li><Link to="/">Contact</Link></li>
           </ul>
         </TopNavigation>
         <Frame className="frame">
-          <Route path="/" component={CHome} />
+          <Route path="/" component={Home} />
         </Frame>
         <Footer className="footer" />
       </Grid>
