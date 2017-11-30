@@ -5,10 +5,10 @@ class Footer extends React.Component {
   render() {
       return(
         <div className={this.props.className}>
+        	<hr />
 			<p>
-				&copy; BashCorp Ltd. { (new Date()).getFullYear() }
-			</p>
-			<p>
+				<span className="bold">&copy; BashCorp Ltd. { (new Date()).getFullYear() }</span>
+				<br />
 				<span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
 				 <span itemProp="streetAddress">International House
 				 776 - 778 Barking Road</span>,

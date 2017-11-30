@@ -1,4 +1,5 @@
 const path = require('path');
+const LessHintPlugin = require('lesshint-webpack-plugin');
 
 const publishRoot = 'dist/public'
 
@@ -9,16 +10,21 @@ const extractLess = new ExtractTextPlugin({
 })
 
 module.exports = {
-  entry: './src/app/app.js',
+  entry: './src/app/app.jsx',
   output: {
     path: path.resolve(publishRoot),
     filename: 'bashcorp.js'
   },
+  devtool: 'source-map',
   module: {
     rules: [
+      { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader', options:{
+          configFile: 'eslint.config'
+      } },
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /static\/[^\/]{1,}\.(html?)$/, loader: 'file-loader', options: { name: 'static/[name].[ext]?[hash]'  } },
       { test: /src\/[^\/]{1,}\.(html?)$/, loader: 'file-loader', options: { name: '[name].[ext]?[hash]'  } },
+      { test: /\.(woff|woff2|ttf|svg|eot)$/, loader: 'file-loader', options: { name: 'font/[name].[ext]?[hash]'  } },
       { test: /\.(png|jpg|gif|ico)$/, loader: 'file-loader', options: { name: 'img/[name].[ext]?[hash]'  } },
       { test: /server\.js/, loader: 'file-loader', options: { name: '../[name].[ext]'  } },
       { test: /\.less$/, use: extractLess.extract({ use: [
@@ -28,7 +34,11 @@ module.exports = {
     ]
   },
   plugins: [
-    extractLess
+    extractLess,
+    new LessHintPlugin({
+      files: [ './src/**/*.less' ],
+      configFile: path.resolve(__dirname, 'lesshint.json')
+    })
   ],
   resolve: {
     extensions: ['.js', '.jsx']
