@@ -2,7 +2,7 @@
 * These are images and other stylistic elements that 
 * need to be published for the site to correctly style.
 **/
-import logo from '../assets/logo.png'
+import logo from '../assets/Logo.png'
 import view from '../assets/View.jpg'
 import tokyo from '../assets/Tokyo.jpg'
 import banner from '../assets/banner.png'
