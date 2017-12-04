@@ -1,0 +1,50 @@
+.carousel {
+
+    @media(min-width:320px) {
+       grid-template-rows: 4.5% 77%;
+       grid-template-columns: 20.4% 59.3%;
+       height: 40vw;
+       width: 100%;
+       .background {
+            min-height: 40vw;
+       }
+    }
+
+    @media(min-width:480px) {
+       grid-template-rows: 4.8% 76.5%;
+       grid-template-columns: 18.5% 63%;
+    }
+
+    @media(min-width:640px) {
+       grid-template-rows: 8.5% 70.5%;
+       grid-template-columns: 18.5% 63%;
+    }
+
+    @media(min-width:1024px) {
+       grid-template-rows: 7% 74%;
+       grid-template-columns: 18.5% 63%;
+       height: 408px;
+       width: 770px;
+       .background {
+            min-height: 410px;
+       }
+    }
+
+    display: grid;
+
+    .background {
+        background: url('/img/Laptop.png') no-repeat center center;
+        background-size: contain;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .slide {
+        grid-column: 2;
+        grid-row: 2;
+        background: red;
+        
+    }
+}
