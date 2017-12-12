@@ -100,3 +100,26 @@ body {
       }
     }
 }
+
+button {
+    padding: 10px;
+    border: 1px solid @hover;
+    color: @gold;
+    background-color: @shadow;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: @hover;
+    color: @dark;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: @dark;
+    color: @highlight;
+}
