@@ -2,18 +2,35 @@
 
 ## Prerequisites:
 
-  1. Install Docker https://www.docker.com/get-docker
-  2. Install NodeJS https://nodejs.org/en/
-  3. Install Yarn and WebPack via NodeJS `npm install -g yarn webpack` with Administrator privileges
+  1. Install VirtualBox
+  2. Install Vagrant 
+  3. Install the Vagrant VirtualBox plugin `vagrant plugin install vagrant-vbguest`
 
-## To develop:
+## To develop
+A development box with everything needed to minify, lint, test, deploy
+and run the site is all set up using `build/Vagrantfile`.  If you need
+to configure a proxy server, this is the place to do so.
 
-  1. Run `npm install -g express nodemon' with Administrator privileges
-  2. Run `npm start` and browse to http://localhost:3000
+### 1. Run Vagrant
 
-## To build a release:
+`vagrant up && vagrant ssh`
 
-  * On macOS or Linux-based systems run `sh build_release.sh`
-  * On Windows run `build_release.bat`
+### 2. Run site
 
-Note that, in either case, you'll need Yarn, Docker and WebPack available in your `PATH`.
+From within a vagrant SSH window, run `npm start` to minify, lint and run on port 3000.  
+
+### 3. Edit files
+
+Edit the files in `src` in your favourite editor.
+
+### 4. View site
+
+You can view the site by going to http://localhost:3000 in your browser.
+
+## To build an image for release:
+
+  1. `vagrant ssh`
+  2. `sh build/deploy_images.sh`
+
+You'll need a Docker account with access to the BashCorp Ltd. docker repo.  It'll
+ask you for these credentials when you run it.

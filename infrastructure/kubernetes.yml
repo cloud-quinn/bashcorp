@@ -1,0 +1,71 @@
+# Configures a Kubernetes container service
+# to run the website.
+
+# Website
+apiVersion: v1
+kind: ReplicationController
+metadata:
+	labels:
+		name: web
+	name: web-controller
+spec:
+	replicas:	1
+	selector:
+		name: web
+	template:
+		metadata:
+			labels:
+				name:	web
+		spec:
+			containers:
+				image: bashcorp/website
+				name: web
+				ports:
+					containerPort:	3000
+					name: http-server
+
+# Website load balancer
+kind:	Service
+metadata:
+	name:	web
+	labels:
+		name:	web
+spec:
+	type:	LoadBalancer
+	ports:
+		port: 80
+		targetPort: 3000
+		protocol: TCP
+	selector:
+		name:	web
+
+# Web server
+kind:	ReplicationController
+metadata:
+	name: webserver
+	labels:
+		name: webserver
+spec:
+	replicas:	1
+	template:
+		metadata:
+			labels:
+				name: webserver
+		spec:
+			containers:
+				image:	bashcorp/webserver
+				name: webserver
+				ports:
+					name:	webserver
+					containerPort: 80 443
+
+# Web server load balancer
+kind:	Service
+metadata:
+	name:	webserver
+	labels:
+		name:	web
+spec:
+	type:	LoadBalancer
+	ports:
+		port: 

@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    name: webserver
+    type: nginx
+  name: webserver
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        name: webserver
+        type: nginx
+    spec:
+      containers:
+      - image: bashcorp/webserver
+        name: webserver
+        ports:
+        - name: webserver
+          containerPort: 80 443
+          hostPort: 80 443

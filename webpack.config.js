@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       { test: /\.jsx?$/, enforce: 'pre', exclude: /node_modules/, loader: 'eslint-loader', options:{
-          configFile: 'eslint.config',
+          configFile: path.resolve(path.join(__dirname, 'build', 'eslint.config')),
           options: {
               outputReport: {
                   filePath: 'reports/EsLint.html',
@@ -42,9 +42,9 @@ module.exports = {
   plugins: [
     extractLess,
     new LessHintPlugin({
-      reporter: require('./lesshintReporter'),
+      reporter: require('./build/lesshintReporter'),
       files: [ './src/**/*.less' ],
-      configFile: path.resolve(__dirname, 'lesshint.json')
+      configFile: path.resolve(path.join(__dirname, 'build', 'lesshint.json'))
     })
   ],
   resolve: {

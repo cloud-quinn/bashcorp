@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: loadbalancer
+  labels:
+    name: loadbalancer
+spec:
+  type: loadbalancer
+  ports:
+  - port: 80 443
+    targetPort: 80 443
+    protocol: TCP
+  selector:
+    name: webserver
