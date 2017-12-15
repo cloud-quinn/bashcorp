@@ -66,36 +66,5 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
-  config.vm.provision "shell", inline: <<-SHELL
-    cd /vagrant
-    yum update -y
-    yum install epel-release -y
-    yum install wget -y
-
-    # Add the Yum repo for Yarn (from https://yarnpkg.com/lang/en/docs/install/)
-    echo "Installing Yarn from https://yarnpkg.com"
-    wget https://dl.yarnpkg.com/rpm/yarn.repo -O /etc/yum.repos.d/yarn.repo
-    yum install yarn -y
-
-    echo "Installing Docker"
-    yum install docker -y
-
-    # Install Azure CLI (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
-    echo "Installing Azure command-line tools"
-    rpm --import https://packages.microsoft.com/keys/microsoft.asc
-    sh -c 'echo -e "[azure-cli]\nname=Azure CLI\nbaseurl=https://packages.microsoft.com/yumrepos/azure-cli\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo'
-    yum check-update
-    yum install azure-cli -y
-
-    echo "Installing packages for repo"
-    yarn install --silent --offline --non-interactive
-    echo "Installing WebPack and NodeMon"
-    yarn global add webpack nodemon --silent --offline --non-interactive
-
-    echo "Setting start folder..."
-    echo "\ncd /vagrant" >> /home/vagrant/.bashrc
-
-    echo "----------"
-    echo "All ready.  Do 'vagrant ssh' to start."
-  SHELL
+  config.vm.provision "shell", path: "build/devprovision.sh"
 end
