@@ -29,9 +29,10 @@ cp /var/tmp/acs-engine-v0.10.0-linux-amd64/* /usr/local/bin
 
 # Install Kubectl from https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-via-curl
 echo "💾     Installing Kubernetes command line tools"
-curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+curl -LOs https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
 chmod +x ./kubectl
 mv ./kubectl /usr/local/bin/kubectl
+az acs kubernetes install-cli
 
 # Get the repo ready to run using local offline dependencies
 echo "💾     Installing packages for repo"
