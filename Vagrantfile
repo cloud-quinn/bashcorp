@@ -15,8 +15,8 @@ Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
   config.vbguest.auto_update = false
 
-  config.proxy.http = "http://www-cache.reith.bbc.co.uk:80"
-  config.proxy.https = "http://www-cache.reith.bbc.co.uk:80"
+  #config.proxy.http = "http://www-cache.reith.bbc.co.uk:80"
+  #config.proxy.https = "http://www-cache.reith.bbc.co.uk:80"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
