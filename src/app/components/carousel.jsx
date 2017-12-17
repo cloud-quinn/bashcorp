@@ -16,7 +16,7 @@ class Carousel extends React.Component{
       {'index': 1, 'img': eon, 'url': 'http://heat.eonenergy.com', caption: 'We worked with E.On to release their community energy Heat site in Sitecore 8.2/C♯ .Net'},
       {'index': 2, 'img': cipfa, 'url': 'http://www.cipfa.org', caption: 'We collaborate with CIPFA on a number of projects, including their new Employer Portal via MyCIPFA'},
       {'index': 3, 'img': cccu, 'url': 'http://www.canterbury.ac.uk', caption: 'We\'ve delivered new student services for Canterbury Christ Church University, in Kent, in .Net and Angular'},
-      {'index': 4, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org', caption: 'Cricket Soc'}
+      {'index': 4, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org', caption: 'We built a new Umbraco/C♯ .Net for the British Cricket Society'}
     ]
 
     this.currentSlide = this.slides[0]

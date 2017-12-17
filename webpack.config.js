@@ -15,6 +15,9 @@ module.exports = {
     path: path.resolve(publishRoot),
     filename: 'bashcorp.js'
   },
+  watchOptions: {
+    poll: true
+  },
   devtool: 'source-map',
   module: {
     rules: [

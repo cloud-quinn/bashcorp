@@ -2,19 +2,12 @@
 
 ## Prerequisites:
 
-### Note for Windows systems:
-You'll probably have an easier time with all this CLI rubbish by enabling the
-Windows Subsystem for Linux.  It's baked into Windows 10 and will give you a full
-Bash terminal: https://docs.microsoft.com/en-us/windows/wsl/install-win10
-
   1. Install VirtualBox
-     On Windows 10 SSfL, use `apt-get install virtualbox`, for other platforms 
-     check https://www.virtualbox.org/wiki/Downloads
   2. Install Vagrant
-     On Windows 10 SSfL, use `apt-get install vagrant`, for other platforms 
-     check https://www.vagrantup.com/downloads.html
+  3. `vagrant plugin install vagrant-vbguest`
 
 ## To develop
+
 A development box with everything needed to minify, lint, test, deploy
 and run the site is all set up using `build/Vagrantfile`.  If you need
 to configure a proxy server, this is the place to do so.
@@ -22,8 +15,7 @@ to configure a proxy server, this is the place to do so.
 ### 1. Run Vagrant
 
   1. `vagrant up`
-  2. `vagrant rsync-auto` to keep the files in sync
-  3. In a new bash/terminal window,  `vagrant ssh`
+  2. `vagrant ssh`
 
 ### 2. Run site
 
