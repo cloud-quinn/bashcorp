@@ -12,11 +12,11 @@ class Carousel extends React.Component{
   constructor(){
     super()
     this.slides = [
-      {'index': 0, 'img': bbc, 'url': 'http://www.bbc.co.uk/taster'},
-      {'index': 1, 'img': eon, 'url': 'http://heat.eonenergy.com'},
-      {'index': 2, 'img': cipfa, 'url': 'http://www.cipfa.org'},
-      {'index': 3, 'img': cccu, 'url': 'http://www.canterbury.ac.uk'},
-      {'index': 4, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org'}
+      {'index': 0, 'img': bbc, 'url': 'http://www.bbc.co.uk/taster', caption: 'As independent contractors, we were part of the BBC Taster team- delivering updates and new features to BBC Taster'},
+      {'index': 1, 'img': eon, 'url': 'http://heat.eonenergy.com', caption: 'We worked with E.On to release their community energy Heat site in Sitecore 8.2/C♯ .Net'},
+      {'index': 2, 'img': cipfa, 'url': 'http://www.cipfa.org', caption: 'We collaborate with CIPFA on a number of projects, including their new Employer Portal via MyCIPFA'},
+      {'index': 3, 'img': cccu, 'url': 'http://www.canterbury.ac.uk', caption: 'We\'ve delivered new student services for Canterbury Christ Church University, in Kent, in .Net and Angular'},
+      {'index': 4, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org', caption: 'Cricket Soc'}
     ]
 
     this.currentSlide = this.slides[0]
@@ -71,6 +71,9 @@ class Carousel extends React.Component{
         </div>
         <div className="slide" style={{backgroundImage: 'url(' + this.currentSlide.img + ')'}} onClick={this.handleClick}>
 
+        </div>
+        <div className="caption">
+          {this.currentSlide.caption}
         </div>
       </div>
     )

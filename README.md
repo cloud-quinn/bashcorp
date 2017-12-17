@@ -21,7 +21,9 @@ to configure a proxy server, this is the place to do so.
 
 ### 1. Run Vagrant
 
-`vagrant up && vagrant rsync-auto & vagrant ssh`
+  1. `vagrant up`
+  2. `vagrant rsync-auto` to keep the files in sync
+  3. In a new bash/terminal window,  `vagrant ssh`
 
 ### 2. Run site
 

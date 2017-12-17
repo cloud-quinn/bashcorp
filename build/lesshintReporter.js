@@ -1,4 +1,7 @@
 const fs = require('fs');
+const path = require('path');
+const reportPath = path.join(__dirname, '..', 'dist', 'reports');
+const reportName = 'LessHint.html';
 
 module.exports = new function(){
     let self = this;
@@ -14,7 +17,11 @@ module.exports = new function(){
         body += (`<tr class="${r.severity == 'warning' ? 'warning' : 'error'}"><td>${r.fullPath}</td><td>${r.line}</td><td>${r.position}</td><td>${r.severity}</td><td>${r.message}</td><td>${r.linter}</td></tr>`);
       });
 
-      fs.writeFile('./dist/public/reports/LessHint.html', header + body + footer);
+      if (!fs.existsSync(reportPath)){
+        fs.mkdirSync(reportPath);
+      }
+
+      fs.writeFile(path.join(reportPath, reportName), header + body + footer);
 
       self.results.forEach(function(r){
         console.log(r);

@@ -1,3 +1,5 @@
+@import './colours';
+
 .carousel {
 
     @media(min-width:320px) {
@@ -30,6 +32,24 @@
        .background {
             min-height: 410px;
        }
+    }
+
+    .caption {
+        background: @highlight;
+        opacity: 0.95;
+        position: relative;
+        bottom: 0;
+        left: 2em;
+        font-size: 0.8em;
+        padding: 1em;
+        width: 20em;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        border-radius: 2px;
+        border: 1px solid @hover;
+        box-shadow: 0 0 2px @dark;
+
     }
 
     display: grid;
