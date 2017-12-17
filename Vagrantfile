@@ -18,6 +18,9 @@ Vagrant.configure("2") do |config|
   #config.proxy.http = "http://www-cache.reith.bbc.co.uk:80"
   #config.proxy.https = "http://www-cache.reith.bbc.co.uk:80"
 
+  config.vm.post_up_message = "vagrant ssh to connect, then npm start"
+  config.vm.hostname = "bashcorpdev"
+
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
@@ -47,14 +50,17 @@ Vagrant.configure("2") do |config|
   # the path on the host to the actual folder. The second argument is
   # the path on the guest to mount the folder. And the optional third
   # argument is a set of non-required options.
-  config.vm.synced_folder ".", "/vagrant", type: "rsync"
+  config.vm.synced_folder ".", "/vagrant", type: "rsync",
+    rsync__exclude: [".git/", "node_modules/", "dist/"]
 
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
   #
-  config.vm.provider "VirtualBox" do |vb|
-    
+  config.vm.provider :virtualbox do |vb|
+    vb.name = "BashcorpDev"
+    vb.memory = 1024
+    vb.cpus = 2
   end
 
   #
