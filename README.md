@@ -2,9 +2,17 @@
 
 ## Prerequisites:
 
+### Note for Windows systems:
+You'll probably have an easier time with all this CLI rubbish by enabling the
+Windows Subsystem for Linux.  It's baked into Windows 10 and will give you a full
+Bash terminal: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
   1. Install VirtualBox
-  2. Install Vagrant 
-  3. Install the Vagrant VirtualBox plugin `vagrant plugin install vagrant-vbguest`
+     On Windows 10 SSfL, use `apt-get install virtualbox`, for other platforms 
+     check https://www.virtualbox.org/wiki/Downloads
+  2. Install Vagrant
+     On Windows 10 SSfL, use `apt-get install vagrant`, for other platforms 
+     check https://www.vagrantup.com/downloads.html
 
 ## To develop
 A development box with everything needed to minify, lint, test, deploy
@@ -13,7 +21,7 @@ to configure a proxy server, this is the place to do so.
 
 ### 1. Run Vagrant
 
-`vagrant up && vagrant ssh`
+`vagrant up && vagrant rsync-auto & vagrant ssh`
 
 ### 2. Run site
 
@@ -21,7 +29,9 @@ From within a vagrant SSH window, run `npm start` to minify, lint and run on por
 
 ### 3. Edit files
 
-Edit the files in `src` in your favourite editor.
+Edit the files in `src` in your favourite editor.  Changes will automatically
+be deployed and should be visible on a refresh- CSS changes will automatically
+appear without a refresh.
 
 ### 4. View site
 
