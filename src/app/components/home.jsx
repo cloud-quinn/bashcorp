@@ -11,12 +11,12 @@ class Home extends React.Component{
         <div className="columns">
           <div className="column1">
             <h2>Who we are</h2>
-            <p>BashCorp is a duo of skilled software contractors- we're ready to take on a role in larger teams, deliver individual projects or for consultancy.</p>
+            <p>BashCorp is a duo of skilled software developers- we're ready to take on a role in larger teams, deliver individual projects or for consultancy.</p>
             <p>We've a proven track record in enterprise, web-oriented software and we're ready to help you.</p>
           </div>
           <div className="column2">
             <h2>What we do</h2>
-            <p>Between us we have 14 years experience delivering software projects, with our focus on:</p>
+            <p>Between us we have 14 years experience delivering software projects, with our focus on coding in:</p>
             <ul>
              <li>Microsoft ASP.Net MVC/WebForms</li>
              <li>Sitecore</li>
@@ -36,7 +36,14 @@ class Home extends React.Component{
               <li>The Cricket Society</li>
               <li>Totally Money</li>
             </ul>
-           
+          </div>
+           <div className="column2">
+            <h2>Where we're based</h2>
+            <p>We're based in Nottingham, and can make it easily to Manchester, Birmingham so London.</p>
+            <p>Alternatively, we can work remotely and save you 20% on our rates (and lowering our carbon footprint ♻︎).</p>
+            <p>
+              <a href="/services#rates">Rates</a>
+            </p>
           </div>
         </div>
        </div>

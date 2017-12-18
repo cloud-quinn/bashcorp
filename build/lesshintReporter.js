@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const reportPath = path.join(__dirname, '..', 'dist', 'reports');
+const reportPath = path.join(__dirname, '..', 'dist', 'public', 'reports');
 const reportName = 'LessHint.html';
 
 module.exports = new function(){
@@ -18,6 +18,7 @@ module.exports = new function(){
       });
 
       if (!fs.existsSync(reportPath)){
+	console.log('Making path ' + reportPath);
         fs.mkdirSync(reportPath);
       }
 
@@ -26,7 +27,7 @@ module.exports = new function(){
       self.results.forEach(function(r){
         console.log(r);
       });
-
+      
     }
 
     self.writeOutPointer = null;
@@ -40,6 +41,6 @@ module.exports = new function(){
         clearInterval(self.writeOutPointer);
       }
 
-      self.writeOutPointer = setTimeout(self.writeOut, 500);
+      self.writeOutPointer = setTimeout(self.writeOut, 1000);
     }
 }
