@@ -16,7 +16,8 @@ module.exports = {
     filename: 'bashcorp.js'
   },
   watchOptions: {
-    poll: true
+    poll: 1000,
+    ignored: /(node_modules|git)/
   },
   devtool: 'source-map',
   module: {

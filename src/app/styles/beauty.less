@@ -64,6 +64,10 @@ body {
     font-weight: 800;
 }
 
+li {
+    text-align: left;
+}
+
 .inline-list {
 
     ul {
@@ -126,4 +130,10 @@ button:active {
 
 h2 {
     color: @gold;
+    font-weight: 800;
+    border-bottom: 2px solid @gold;
+}
+
+h2::before {
+    content: '› ';
 }
