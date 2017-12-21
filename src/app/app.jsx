@@ -4,11 +4,13 @@ import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import bashCorp from '../reducers'
 import ReactDOM from 'react-dom'
-import {BrowserRouter as Router, Route, NavLink} from 'react-router-dom'
+import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom'
 import dependencies from './dependencies'
 import components from './styles/components.less'
 
-import Home from './components/home'
+import Home from './pages/home'
+import Services from './pages/services'
+import NotFound from './pages/notfound'
 import Footer from './components/footer'
 import Frame from './components/frame'
 import Grid from './components/grid'
@@ -28,7 +30,7 @@ ReactDOM.render(
         <TopNavigation className="site-navigation">
           <ul>
             <li>
-                <NavLink activeClassName="selected" to="/">
+                <NavLink activeClassName="selected" exact to="/">
                     <IconButton icon="fa-home" label="Home" />
                 </NavLink>
             </li>
@@ -50,7 +52,11 @@ ReactDOM.render(
           </ul>
         </TopNavigation>
         <Frame className="frame">
-          <Route path="/" component={Home} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/services" component={Services} />
+            <Route component={NotFound} />
+          </Switch>
         </Frame>
         <Footer className="footer" />
       </Grid>

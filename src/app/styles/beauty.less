@@ -68,18 +68,38 @@ li {
     text-align: left;
 }
 
-a {
-    color: @dark;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-a:hover {
-    text-shadow: 0 0 2px @shadow;
-}
-
-a:active {
+a,
+button {
     color: @gold;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid @gold;
+    border-radius: 1px;
+    background-color: @hover;
+    opacity: 0.9;
+}
+
+a.selected,
+button.selected {
+    background: @gold;
+    color: @highlight;
+    text-shadow: none;
+}
+
+button:active,
+button:focus {
+    outline: none;
+}
+
+a:hover,
+button:hover {
+    background-color: lighten(@hover, 10);
+    color: @midgray;
+}
+
+a:active,
+button:active {
+    background-color: @highlight;
 }
 
 .inline-list {
@@ -92,54 +112,8 @@ a:active {
       li {
           display: inline;
           margin: 5px;
-
-          a {
-            color: @gold;
-            text-decoration: none;
-            padding: 5px;
-            border: 1px solid @gold;
-            border-radius: 1px;
-            text-shadow: 0 0 10px @shadow;
-          }
-
-          a.selected {
-              background: @gold;
-              color: @highlight;
-              text-shadow: none;
-          }
-
-          a:hover {
-            background-color: @hover;
-          }
-
-          a:active {
-            background-color: @highlight;
-          }
       }
     }
-}
-
-button {
-    padding: 10px;
-    border: 1px solid @hover;
-    color: @gold;
-    background-color: @shadow;
-    margin: 5px;
-}
-
-button:hover {
-    background-color: @hover;
-    color: @dark;
-}
-
-button:active,
-button:focus {
-    outline: none;
-}
-
-button:active {
-    background-color: @dark;
-    color: @highlight;
 }
 
 h2 {

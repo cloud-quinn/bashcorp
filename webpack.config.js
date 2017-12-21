@@ -26,7 +26,7 @@ module.exports = {
           configFile: path.resolve(path.join(__dirname, 'build', 'eslint.config')),
           options: {
               outputReport: {
-                  filePath: 'public/reports/EsLint.html',
+                  filePath: './dist/public/reports/EsLint.html',
                   formatter: require('eslint/lib/formatters/html')
               }
           }

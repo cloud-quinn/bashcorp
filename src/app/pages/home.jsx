@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from './carousel'
+import Carousel from '../components/carousel'
 import home from '../styles/home.less'
 
 class Home extends React.Component{
@@ -40,7 +40,7 @@ class Home extends React.Component{
            <div className="column2">
             <h2>Where we're based</h2>
             <p>We're based in Nottingham, and can make it easily to Manchester, Birmingham so London.</p>
-            <p>Alternatively, we can work remotely and save you 20% on our rates (and lowering our carbon footprint ♻︎).</p>
+            <p>Alternatively, we can work remotely and save you money on our rates (and lowering our carbon footprint ♻︎).</p>
             <p>
               <a href="/services#rates">Rates</a>
             </p>

@@ -27,12 +27,13 @@ module.exports = new function(){
       self.results.forEach(function(r){
         console.log(r);
       });
+
+      self.results = [];
       
     }
 
     self.writeOutPointer = null;
     self.report = function(results) {
-      if (results.length === 0) return;
       results.forEach(function(r){
         self.results.push(r);
       });

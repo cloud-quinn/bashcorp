@@ -1,0 +1,31 @@
+@import './colours';
+
+.heroUnit {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 1px;
+    align-content: center;
+    align-items: center;
+
+    .heroOverlay {
+        background: @lightgold;
+        color: @midgray;
+        opacity: 0.9;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        padding: 0.5em 1em;
+        border-radius: 1px;
+        border: 1px solid @gray;
+
+        h2 {
+            border: 0;
+            font-size: 1.3em;
+            margin: 5px;
+            padding: 5px;
+        }
+    }
+}
