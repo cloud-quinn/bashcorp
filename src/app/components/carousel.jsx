@@ -1,11 +1,11 @@
 import React from 'react'
 import carouselstyles from '../styles/carousel.less'
 
-import cipfa from '../assets/carousel/CIPFA.png'
-import bbc from '../assets/carousel/bbcTaster.png'
-import cccu from '../assets/carousel/cccuPortal.png'
-import cricketSoc from '../assets/carousel/cricket-society.png'
-import eon from '../assets/carousel/eonHeat.png'
+let cipfa = ''
+let bbc = ''
+let cccu = ''
+let cricketSoc = ''
+let eon = ''
 
 class Carousel extends React.Component{
 

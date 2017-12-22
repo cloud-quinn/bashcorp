@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/hero'
-import ServicesHero from '../assets/hero/Tokyo.jpg'
+let ServicesHero = ''
 
 class Services extends React.Component{
 
