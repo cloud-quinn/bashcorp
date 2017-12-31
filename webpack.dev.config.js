@@ -6,7 +6,7 @@ const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin');
 module.exports = merge(common, {
     devtool: 'source-map',
     watchOptions: {
-      poll: 1000,
+      poll: 2000,
       ignored: /(node_modules|git)/
     },
     plugins: [

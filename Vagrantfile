@@ -4,8 +4,8 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
 
-  config.proxy.http = "http://www-cache.reith.bbc.co.uk:80"
-  config.proxy.https = "http://www-cache.reith.bbc.co.uk:80"
+  #config.proxy.http = "http://www-cache.reith.bbc.co.uk:80"
+  #config.proxy.https = "http://www-cache.reith.bbc.co.uk:80"
 
   config.vm.hostname = "bashcorpdev"
 
