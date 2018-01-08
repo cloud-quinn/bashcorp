@@ -7,8 +7,34 @@ body {
     color: @dark;
 }
 
+abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted @gold;
+}
+
+dt {
+    margin-top: 1em;
+}
+
+a {
+    color: #445ed4;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #7c48b7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .tiny-label {
     font-size: 0.8em;
+}
+
+.nowrap {
+    white-space: pre;
 }
 
 .background-view {
@@ -17,6 +43,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.green {
+    color: #4caf50;
 }
 
 .blurred-view {
@@ -68,7 +98,7 @@ li {
     text-align: left;
 }
 
-a,
+a.button,
 button {
     color: @gold;
     text-decoration: none;
@@ -79,7 +109,7 @@ button {
     opacity: 0.9;
 }
 
-a.selected,
+a.button.selected,
 button.selected {
     background: @gold;
     color: @highlight;
@@ -91,13 +121,13 @@ button:focus {
     outline: none;
 }
 
-a:hover,
+a.button.selected:hover,
 button:hover {
     background-color: lighten(@hover, 10);
     color: @midgray;
 }
 
-a:active,
+a.button:active,
 button:active {
     background-color: @highlight;
 }
@@ -117,11 +147,23 @@ button:active {
 }
 
 h2 {
-    color: @gold;
     font-weight: 800;
     border-bottom: 2px solid @gold;
 }
 
-h2::before {
+h2,
+dt {
+    color: @gold;
+}
+
+h2::before,
+dt::before {
     content: '› ';
+}
+
+.unstyledLink {
+    border: 0;
+    background: none;
+    padding: 0;
+    margin: 0;
 }

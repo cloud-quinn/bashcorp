@@ -3,6 +3,7 @@ import React from 'react'
 class NotFound extends React.Component{
 
     render(){
+        document.title = 'Page Not Found'
         console.warn(`Yeah, it's a ⚠️404 status sent over a 200 connection, which semantically bites.
 
 Problem is, it's a clientside single-page app... so how do you send a correct 404 status when

@@ -5,6 +5,8 @@ import home from '../styles/home.less'
 class Home extends React.Component{
 
   render(){
+    document.title = 'BashCorp Ltd. Professional IT Solutions'
+    
     return(
       <div className="home-component">
         <Carousel />
@@ -40,9 +42,9 @@ class Home extends React.Component{
            <div className="column2">
             <h2>Where we're based</h2>
             <p>We're based in Nottingham, and can make it easily to Manchester, Birmingham so London.</p>
-            <p>Alternatively, we can work remotely and save you money on our rates (and lowering our carbon footprint ♻︎).</p>
+            <p>Alternatively, we can work remotely and save you money on our rates (and lowering our carbon footprint <span className="green">♻︎</span>).</p>
             <p>
-              <a href="/services#rates">Rates</a>
+              <a href="/services#rates" className="button">Rates</a>
             </p>
           </div>
         </div>

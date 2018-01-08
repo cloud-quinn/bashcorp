@@ -11,6 +11,7 @@ import components from './styles/components.less'
 import Home from './pages/home'
 import Services from './pages/services'
 import NotFound from './pages/notfound'
+import Contact from './pages/contact'
 import Footer from './components/footer'
 import Frame from './components/frame'
 import Grid from './components/grid'
@@ -30,22 +31,22 @@ ReactDOM.render(
         <TopNavigation className="site-navigation">
           <ul>
             <li>
-                <NavLink activeClassName="selected" exact to="/">
+                <NavLink activeClassName="selected" className="button" exact to="/">
                     <IconButton icon="fa-home" label="Home" />
                 </NavLink>
             </li>
             <li>
-                <NavLink activeClassName="selected" to="/services">
+                <NavLink activeClassName="selected" className="button" to="/services">
                     <IconButton icon="fa-handshake-o" label="Services" />
                 </NavLink>
             </li>
             <li>
-                <NavLink activeClassName="selected" to="/portfolio">
+                <NavLink activeClassName="selected" className="button" to="/portfolio">
                     <IconButton icon="fa-picture-o" label="Portfolio" />
                 </NavLink>
             </li>
             <li>
-                <NavLink activeClassName="selected" to="/contact">
+                <NavLink activeClassName="selected" className="button" to="/contact">
                     <IconButton icon="fa-envelope-o" label="Contact" />
                 </NavLink>
             </li>
@@ -55,10 +56,11 @@ ReactDOM.render(
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/services" component={Services} />
+            <Route path="/contact" component={Contact} />
             <Route component={NotFound} />
           </Switch>
+          <Footer className="footer" />
         </Frame>
-        <Footer className="footer" />
       </Grid>
     </Router>
   </Provider>, document.getElementById('root')

@@ -1,11 +1,12 @@
 import React from 'react'
+import Icon from './icon'
 
 class IconButton extends React.Component {
 
   render(){
       return(
         <span>
-            <i className={ `fa ${this.props.icon}` }></i>&nbsp;
+            <Icon icon={this.props.icon} />&nbsp;
             <span className="tiny-label">{this.props.label}</span>
         </span>
       )
