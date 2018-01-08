@@ -13,6 +13,8 @@ yum install yarn -y -q  > /dev/null
 
 echo "💾     2/7 Installing Docker"
 yum install docker -y -q  > /dev/null
+groupadd docker
+usermod -aG docker vagrant
 
 # Install Azure CLI (https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 echo "💾     3/7 Installing Azure command-line tools"
@@ -44,6 +46,7 @@ yarn global add webpack nodemon --silent --offline --non-interactive  > /dev/nul
 # Move the user to the correct start folder
 echo "📁     Setting start folder..."
 echo "cd /vagrant" >> /home/vagrant/.bashrc
+echo "PATH=\$PATH:~/usr/lib/node_modules/npm" >> /home/vagrant/.bashrc
 
 echo "----------"
 echo "✅     All ready.  Do 'vagrant ssh' to start."
