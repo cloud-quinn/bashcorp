@@ -13,11 +13,11 @@ class Contact extends React.Component{
         return(
             <div className="home-component">
                 <Hero url={ServicesHero} height={'200px'}>
-                    <h2>Contact Us</h2>
+                    <h1>Contact Us</h1>
                 </Hero>
                 <div className="columns">
                     <div className="column1">
-                        <h3>Social Media</h3>
+                        <h2>Social Media</h2>
                         <dl>
                             <dt>
                                 <ExternalLink url="https://uk.linkedin.com/company/bashcorp">
@@ -48,7 +48,7 @@ class Contact extends React.Component{
                     </div>
 
                     <div className="column2">
-                        <h3>Phone, Email &amp; Post</h3>
+                        <h2>Phone, Email &amp; Post</h2>
                         <dl itemScope itemType="http://schema.org/Company">
                             <dt class="sr-only">
                                 <span itemProp="name">BashCorp Ltd.</span>

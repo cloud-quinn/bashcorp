@@ -10,6 +10,7 @@ import components from './styles/components.less'
 
 import Home from './pages/home'
 import Services from './pages/services'
+import Portfolio from './pages/portfolio'
 import NotFound from './pages/notfound'
 import Contact from './pages/contact'
 import Footer from './components/footer'
@@ -57,6 +58,7 @@ ReactDOM.render(
             <Route exact path="/" component={Home} />
             <Route path="/services" component={Services} />
             <Route path="/contact" component={Contact} />
+            <Route path="/portfolio" component={Portfolio} />
             <Route component={NotFound} />
           </Switch>
           <Footer className="footer" />

@@ -11,10 +11,10 @@ class Services extends React.Component{
         return(
             <div>
                 <Hero url={ServicesHero} height={'200px'}>
-                    <h2>Services</h2>
+                    <h1>Services</h1>
                 </Hero>
                 
-                <h3>Frameworks</h3>
+                <h2>Frameworks</h2>
                 <p>
                     We've got years of experience in both <strong>AngularJS</strong> and 
                     <strong>React</strong>, built on both open-source platforms such as
@@ -33,7 +33,7 @@ class Services extends React.Component{
                         <abbr title="Service-oriented architecture">SOA</abbr> using <abbr title="Windows Communication Foundation">WCF</abbr> and WebAPI
                     </li>
                 </ul>
-                <h3>Platforms</h3>
+                <h2>Platforms</h2>
                 <p>We&lsquo;re most at home on Windows, but also know our way around MacOS and Linux
                 based systems, with experience working in <strong>AWS</strong> and <strong>Azure</strong>.</p>
                 <h3>Toolsets</h3>
@@ -65,7 +65,7 @@ class Services extends React.Component{
                 </ul>
                 <p>Have a look at our <a href="/portfolio">Portfolio</a> to see some of the places
                 and projects we've been part of and, if you want, give us a call!</p>
-                <h3><a id="rates"></a>Rates</h3>
+                <h2><a id="rates"></a>Rates</h2>
                 <p>Our rates depend on what you need and where you need us- remote working is a lot cheaper for us than
                 on-site working, plus it helps to save the environment <span className="green">♻︎</span>.  We can easily reach Manchester,
                 Birmingham, Nottingham and can get to Liverpool and London.</p>
