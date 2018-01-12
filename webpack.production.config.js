@@ -13,8 +13,14 @@ module.exports = merge(common, {
                 dir: 'dist',
                 test: /\.(jsx?|html?|less|css)$/,
                 rules: [{
+                    // Put the carousel into its own folder
+                    search: /BashCorpImgRoot\/carousel\//gi,
+                    replace: 'https://bashcorp.azureedge.net/carousel/'
+                },
+                {
+                    // Put everything else into a website assets folder
                     search: /BashCorpImgRoot/gi,
-                    replace: 'AZUREROOT' // TODO Azure CDN Url
+                    replace: 'https://bashcorp.azureedge.net/website'
                 }]
             }])
     ]

@@ -1,6 +1,7 @@
-FROM "centos:7"
-#ENV http_proxy "http://www-cache.reith.bbc.co.uk:80"
-#ENV https_proxy "http://www-cache.reith.bbc.co.uk:80"
+FROM centos:7
+ARG proxy
+RUN export http_proxy=$proxy
+RUN export https_proxy=$proxy
 RUN yum update -y -q
 RUN yum install epel-release -y -q
 RUN yum install nodejs -y -q
@@ -9,4 +10,7 @@ RUN mkdir usr/bashcorp
 ADD ./dist usr/bashcorp
 WORKDIR usr/bashcorp
 RUN npm install express --silent
+EXPOSE 3000
+RUN export http_proxy=""
+RUN export https_proxy=""
 CMD nodemon /usr/bashcorp/server.js
