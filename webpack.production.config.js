@@ -14,12 +14,12 @@ module.exports = merge(common, {
                 test: /\.(jsx?|html?|less|css)$/,
                 rules: [{
                     // Put the carousel into its own folder
-                    search: /BashCorpImgRoot\/carousel\//gi,
+                    search: /\/BashCorpImgRoot\/carousel\//gi,
                     replace: 'https://bashcorp.azureedge.net/carousel/'
                 },
                 {
                     // Put everything else into a website assets folder
-                    search: /BashCorpImgRoot/gi,
+                    search: /\/BashCorpImgRoot/gi,
                     replace: 'https://bashcorp.azureedge.net/website'
                 }]
             }])

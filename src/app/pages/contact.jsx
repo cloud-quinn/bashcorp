@@ -3,7 +3,7 @@ import Hero from '../components/hero'
 import Icon from '../components/icon'
 import home from '../styles/home.less'
 import ExternalLink from '../components/externalLink'
-let ServicesHero = '/BashCorpImgRoot/Tokyo.jpg'
+let ServicesHero = '/BashCorpImgRoot/Granada.jpeg'
 
 class Contact extends React.Component{
 

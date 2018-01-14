@@ -23,6 +23,7 @@ class Home extends React.Component{
              <li>Microsoft ASP.Net MVC/WebForms</li>
              <li>Sitecore</li>
              <li>React+Redux</li>
+             <li>ES6 JavaScript/Babel</li>
              <li>Node</li>
              <li>Angular</li>
             </ul>
@@ -36,12 +37,11 @@ class Home extends React.Component{
               <li>The Chartered Institute of Public Finances and Accounts</li>
               <li>Canterbury Christ Church University</li>
               <li>The Cricket Society</li>
-              <li>Totally Money</li>
             </ul>
           </div>
            <div className="column2">
             <h2>Where we're based</h2>
-            <p>We're based in Nottingham, and can make it easily to Manchester, Birmingham so London.</p>
+            <p>We're based in Nottingham, and can make it easily to Manchester, Leeds, Birmingham or London.</p>
             <p>Alternatively, we can work remotely and save you money on our rates (and lowering our carbon footprint <span className="green">♻︎</span>).</p>
             <p>
               <a href="/services#rates" className="button">Rates</a>

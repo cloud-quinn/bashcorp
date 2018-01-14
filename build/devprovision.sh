@@ -38,14 +38,19 @@ chmod +x ./kubectl
 mv ./kubectl /usr/local/bin/kubectl
 az acs kubernetes install-cli  > /dev/null
 cp /vagrant/build/patches/_docker_utils.py /usr/lib64/az/lib/python2.7/site-packages/azure/cli/command_modules/acr/_docker_utils.py
-
+mkdir /home/vagrant/.kube
+mkdir /home/vagrant/.ssh
+cp -R /vagrant/build/kube.conf /home/vagrant/.kube/conf
+cp -R /vagrant/build/ssh.conf/* /home/vagrant/.ssh
+chown -R vagrant /home/vagrant/.kube
+chown -R vagrant /home/vagrant/.ssh
 
 # Get the repo ready to run using local offline dependencies
 echo "💾     6/7 Installing packages for repo"
 yarn install --silent --offline --non-interactive  > /dev/null
 echo "💾     7/7 Installing WebPack and NodeMon"
 yarn global add webpack nodemon --silent --offline --non-interactive  > /dev/null
-ssh-keygen -P bibble -t rsa -b 4096 -C "enquiries@bashcorp.co.uk" -f /home/vagrant/.ssh/id_rsa
+
 
 # Move the user to the correct start folder
 echo "📁     Setting start folder..."

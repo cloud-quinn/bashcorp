@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 
-let ServicesHero = '/BashCorpImgRoot/Tokyo.jpg'
+let ServicesHero = '/BashCorpImgRoot/Miyajima.jpeg'
 
 class Services extends React.Component{
 
@@ -16,14 +16,12 @@ class Services extends React.Component{
                 
                 <h2>Frameworks</h2>
                 <p>
-                    We've got years of experience in both <strong>AngularJS</strong> and 
-                    <strong>React</strong>, built on both open-source platforms such as
-                    <strong>NodeJS</strong> and <strong>Microsoft IIS 8</strong>.
+                    We've got years of experience in <strong>AngularJS / Angular 2+</strong> and <strong>React</strong>, 
+                    built on both open-source platforms such as <strong>NodeJS</strong> and <strong>Microsoft IIS 8</strong>.
                 </p>
                 <p>
-                    We also have many years experience delivering excellent, exciting and
-                    new applications in the Microsoft .Net stack: both <strong>Umbraco</strong> 
-                    and <strong>Sitecore 8</strong> websites for some really large organisations.
+                    We also have many years experience delivering reliable, performant, responsive applications in the 
+                    Microsoft .Net stack: both <strong>Umbraco</strong> and <strong>Sitecore 8</strong> websites for some really large organisations.
                 </p>
                 <ul>
                     <li>Entity Framework</li>
@@ -37,41 +35,43 @@ class Services extends React.Component{
                 <p>We&lsquo;re most at home on Windows, but also know our way around MacOS and Linux
                 based systems, with experience working in <strong>AWS</strong> and <strong>Azure</strong>.</p>
                 <h3>Toolsets</h3>
-                <p>We're passionate advocates of both TDD and BDD, with rock-solid skills in:</p>
+                <p>We're passionate advocates of both TDD, BDD and DevOps, with rock-solid skills in:</p>
                 <ul>
                     <li>
-                        <ExternalLink url="https://karma-runner.github.io/2.0/" text="Karma" /> / 
-                        <ExternalLink url="https://jasmine.github.io/" text="Jasmine" />
+                        JavaScript Test Frameworks (<ExternalLink url="https://karma-runner.github.io/2.0/" text="Karma" /> / <ExternalLink url="https://jasmine.github.io/" text="Jasmine" />)
                     </li>
                     <li>
-                        <ExternalLink url="http://nunit.org" text="NUnit" /> /
-                        <ExternalLink url="https://xunit.github.io/" text="XUnit" />
+                        CSS Preprocessors (<ExternalLink url="http://sass-lang.com/" text="SASS" /> / <ExternalLink url="http://lesscss.org/" text="LESS" />)
                     </li>
                     <li>
-                        <ExternalLink url="http://specflow.org/" text="SpecFlow" />
+                        .Net Test Frameworks (<ExternalLink url="http://nunit.org" text="NUnit" /> / <ExternalLink url="https://xunit.github.io/" text="XUnit" />)
                     </li>
                     <li>
-                        <ExternalLink url="https://www.jetbrains.com/teamcity/" text="TeamCity" /> and 
-                        <ExternalLink url="https://jenkins-ci.org/" text="Jenkins" />
+                        Behaviour-driven testing (<ExternalLink url="http://specflow.org/" text="SpecFlow" />)
                     </li>
                     <li>
-                        <ExternalLink url="https://octopus.com/" text="Octopus Deploy" /> and 
-                        <ExternalLink url="https://kubernetes.io/" text="Kubernetes" />
+                        Continuous integration and building (<ExternalLink url="https://www.jetbrains.com/teamcity/" text="TeamCity" /> and <ExternalLink url="https://jenkins-ci.org/" text="Jenkins" />)
                     </li>
                     <li>
-                        <ExternalLink url="https://www.docker.com/" text="Docker" /> and 
-                        <ExternalLink url="https://www.vagrantup.com/" text="Vagrant" />
+                        Continuous deployment and provisioning (<ExternalLink url="https://octopus.com/" text="Octopus Deploy" /> and <ExternalLink url="https://kubernetes.io/" text="Kubernetes" />)
+                    </li>
+                    <li>
+                        Cloud SAAS/PAAS infrastructure providers (<ExternalLink url="http://www.azure.com" text="Azure" /> and <ExternalLink url="http://aws.amazon.com" text="AWS" />)
+                    </li>
+                    <li>
+                        Virtualisation containers (<ExternalLink url="https://www.docker.com/" text="Docker" /> and <ExternalLink url="https://www.vagrantup.com/" text="Vagrant" />)
                     </li>
                 </ul>
-                <p>Have a look at our <a href="/portfolio">Portfolio</a> to see some of the places
-                and projects we've been part of and, if you want, give us a call!</p>
+                <p>Have a look at our <a href="/portfolio">Portfolio</a> to see some of the great teams we've worked with
+                and projects we've delivered.</p>
                 <h2><a id="rates"></a>Rates</h2>
                 <p>Our rates depend on what you need and where you need us- remote working is a lot cheaper for us than
                 on-site working, plus it helps to save the environment <span className="green">♻︎</span>.  We can easily reach Manchester,
-                Birmingham, Nottingham and can get to Liverpool and London.</p>
+                Birmingham, Leeds, Nottingham and can get to Liverpool and London.</p>
                 <p>Generally, our day rate is between &pound;300-400 for remote and &pound;400-500 on-site; 
                 though that's only a guide.  <ExternalLink url="https://www.gov.uk/guidance/ir35-find-out-if-it-applies" text="IR35" />, 
-                distance and a whole bunch of stuff go into it.  Give us a call and we'll negotiate 😀.</p>
+                distance and a whole bunch of stuff go into it.</p>
+                <p>Is <em>your</em> project in a stall?  Give us a call!</p>
             </div>
         );
     }

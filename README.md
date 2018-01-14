@@ -5,6 +5,7 @@
   1. Install VirtualBox
   2. Install Vagrant
   3. `vagrant plugin install vagrant-vbguest`
+  4. `vagrant plugin install vagrant-proxyconf`
 
 ## To develop
 

@@ -2,70 +2,70 @@
 # to run the website.
 
 # Website
-apiVersion: v1
-kind: ReplicationController
+apiVersion: apps/v1beta1
+kind: Deployment
 metadata:
-	labels:
-		name: web
-	name: web-controller
+  name: website
 spec:
-	replicas:	1
-	selector:
-		name: web
-	template:
-		metadata:
-			labels:
-				name:	web
-		spec:
-			containers:
-				image: bashcorp/website
-				name: web
-				ports:
-					containerPort:	3000
-					name: http-server
-
+  replicas:  1
+  template:
+    metadata:
+      labels:
+        app:  website
+    spec:
+      containers:
+      - name: website
+        image: bashcorpacr.azurecr.io/website
+        ports:
+        - containerPort:  3000
+          name: http-server
+---
 # Website load balancer
-kind:	Service
+apiVersion: v1
+kind:  Service
 metadata:
-	name:	web
-	labels:
-		name:	web
+  name:  website
 spec:
-	type:	LoadBalancer
-	ports:
-		port: 80
-		targetPort: 3000
-		protocol: TCP
-	selector:
-		name:	web
-
+  type:  LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 3000
+    protocol: TCP
+  selector:
+    app:  website
+---
 # Web server
-kind:	ReplicationController
+apiVersion: apps/v1beta1
+kind:  Deployment
 metadata:
-	name: webserver
-	labels:
-		name: webserver
+  name: reverseproxy
 spec:
-	replicas:	1
-	template:
-		metadata:
-			labels:
-				name: webserver
-		spec:
-			containers:
-				image:	bashcorp/webserver
-				name: webserver
-				ports:
-					name:	webserver
-					containerPort: 80 443
-
+  replicas:  1
+  template:
+    metadata:
+      labels:
+        app: reverseproxy
+    spec:
+      containers:
+      - name: reverseproxy
+        image:  bashcorpacr.azurecr.io/reverseproxy
+        ports:
+        - containerPort: 80
+          name: http
+        - containerPort: 443
+          name: https
+---
 # Web server load balancer
-kind:	Service
+apiVersion: v1
+kind:  Service
 metadata:
-	name:	webserver
-	labels:
-		name:	web
+  name:  reverseproxy
 spec:
-	type:	LoadBalancer
-	ports:
-		port: 
+  type:  LoadBalancer
+  ports:
+  - port: 80
+    name: http
+  - port: 443
+    name: https
+  selector:
+    app:  website

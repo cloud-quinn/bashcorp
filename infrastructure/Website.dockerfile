@@ -11,6 +11,4 @@ ADD ./dist usr/bashcorp
 WORKDIR usr/bashcorp
 RUN npm install express --silent
 EXPOSE 3000
-RUN export http_proxy=""
-RUN export https_proxy=""
 CMD nodemon /usr/bashcorp/server.js
