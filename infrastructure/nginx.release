@@ -12,7 +12,7 @@ http {
 	gzip_proxied	any;
 	gzip_comp_level 1;
 	gzip_http_version 1.1;
-	gzip_types 	text/plain text/css application/json application/x-javascript application/javascript text/xml application/xml application/xml+rss text/javascript text/html;
+	gzip_types 	text/plain text/css application/json application/javascript application/x-javascript text/xml application/xml application/xml+rss text/javascript text/html;
 
 	default_type	application/octet-stream;
 	sendfile	on;
@@ -32,7 +32,7 @@ http {
                                    http_500 http_502 http_503 http_504;
 
 		location / {
-			proxy_pass	http://WEBSITESERVICE:80;
+			proxy_pass	http://51.140.50.226:80;
 		}
 	}
 }
