@@ -1,10 +1,9 @@
-echo "⚙️  Starting..."
+echo "Deploying new code... to deploy infrastructure, sh infrastructure/deploy_infrastructure.sh"
+version=$(date +%s)
 
-sh build/build_images.sh
-#sh build/deploy_assets.sh
-sh build/deploy_images.sh
-#sh infrastructure/deploy_infrastructure.sh
-
-echo "🔄  Updating live version:"
-kubectl set image deployment website website=bashcorpacr.azurecr.io/website
-kubectl set image deployment reverseproxy reverseproxy=bashcorpacr.azurecr.io/reverseproxy
+sh infrastructure/build_website_image.sh "$version"
+sh infrastructure/deploy_website_image.sh "$version"
+sh infrastructure/update_website.sh "$version"
+sh infrastructure/build_reverseproxy_image.sh "$version"
+sh infrastructure/deploy_reverseproxy_image.sh "$version"
+sh infrastructure/update_reverseproxy.sh "$version"

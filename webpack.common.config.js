@@ -27,7 +27,7 @@ module.exports = {
           }
       } },
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /src\/[^\/]{1,}\.(html?)$/, loader: 'file-loader', options: { name: '[name].[ext]?[hash]'  } },
+      { test: /src\/[^\/]{1,}\.(html?|xml)$/, loader: 'file-loader', options: { name: '[name].[ext]?[hash]'  } },
       { test: /\.(woff|woff2|ttf|svg|eot)$/, loader: 'file-loader', options: { name: 'font/[name].[ext]?[hash]'  } },
       { test: /server\.js/, loader: 'file-loader', options: { name: '../[name].[ext]'  } },
       { test: /\.less$/, use: extractLess.extract({ use: [

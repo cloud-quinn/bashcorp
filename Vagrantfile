@@ -4,8 +4,8 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "centos/7"
 
-  config.proxy.http = false
-  config.proxy.https = false
+  config.proxy.http = ""
+  config.proxy.https = ""
 
   config.vm.hostname = "bashcorpdev"
 

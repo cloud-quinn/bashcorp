@@ -2,7 +2,7 @@ FROM centos:7
 ARG proxy
 RUN export http_proxy=$proxy
 RUN export https_proxy=$proxy
-RUN echo "proxy=$proxy" >> /etc/yum.conf
+RUN if [ ! -z $proxy ]; then echo "proxy=$proxy" >> /etc/yum.conf; fi
 RUN yum update -y -q
 RUN yum install initscripts -y
 RUN yum install sudo -y

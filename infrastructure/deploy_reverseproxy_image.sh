@@ -1,5 +1,11 @@
 echo "Connecting to Azure image container..."
 az acr login --name bashcorpAcr
-docker tag bashcorp/reverseproxy bashcorpacr.azurecr.io/reverseproxy
-echo "Pushing new version..."
-docker push bashcorpacr.azurecr.io/reverseproxy
+version=""
+if [ -z $1 ];
+then
+	read -p "Version of website to push: " version
+else
+	version=$1
+fi 
+
+docker push bashcorpacr.azurecr.io/reverseproxy:$version
