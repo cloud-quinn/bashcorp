@@ -1,9 +1,12 @@
 <!DOCTYPE>
 <html lang="en-gb">
 	<head>
+
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>BashCorp Ltd. Professional IT Solutions</title>
 		<meta charset="unicode">
+		<link rel="stylesheet" type="text/css" href="main.css">
 		<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
@@ -16,44 +19,19 @@
 		<meta name="msapplication-wide310x150logo" content="img/mstile-310x150.png" />
 		<meta name="msapplication-square310x310logo" content="img/mstile-310x310.png" />
 		<meta name="google-site-verification" content="fG6tLYLods9xIKjyFKH2qtAobuYbrnXpxViq_8Bxst0" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112543064-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-112543064-1');
+		  </script>
 	</head>
 	<body itemscope itemtype="http://schema.org/ProfessionalService">
 	<div id="root"></div>
 	<script type="text/javascript" async="false" src="bashcorp.js"></script>
-	<link rel="stylesheet" type="text/css" href="main.css">
 	<a href="reports/eslint.html" style="display:none" rel="nofollow">ES Lint Report</a>
 	<a href="reports/LessHint.html" style="display:none" rel="nofollow">Less Hint Report</a>
-	<script type="text/javascript">
-			// Application Insights for Azure
-  var appInsights=window.appInsights||function(a){
-    function b(a){c[a]=function(){var b=arguments;c.queue.push(function(){c[a].apply(c,b)})}}var c={config:a},d=document,e=window;setTimeout(function(){var b=d.createElement("script");b.src=a.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js",d.getElementsByTagName("script")[0].parentNode.appendChild(b)});try{c.cookie=d.cookie}catch(a){}c.queue=[];for(var f=["Event","Exception","Metric","PageView","Trace","Dependency"];f.length;)b("track"+f.pop());if(b("setAuthenticatedUserContext"),b("clearAuthenticatedUserContext"),b("startTrackEvent"),b("stopTrackEvent"),b("startTrackPage"),b("stopTrackPage"),b("flush"),!a.disableExceptionTracking){f="onerror",b("_"+f);var g=e[f];e[f]=function(a,b,d,e,h){var i=g&&g(a,b,d,e,h);return!0!==i&&c["_"+f](a,b,d,e,h),i}}return c
-    }({
-        instrumentationKey:"51334df0-ba43-4e82-84a9-c67f7e7aee65"
-    });
-    
-  window.appInsights=appInsights,appInsights.queue&&0===appInsights.queue.length&&appInsights.trackPageView();
-
-  			// Instrumentation for AppDynamics
-	  			window['adrum-start-time'] = new Date().getTime();
-	(function(config){
-	    config.appKey = 'AD-AAB-AAH-ASC';
-	    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
-	    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
-	    config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
-	    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
-	    config.xd = {enable : false};
-	})(window['adrum-config'] || (window['adrum-config'] = {}));
-	if ('https:' === document.location.protocol) {
-	    document.write(unescape('%3Cscript')
-	 + " src='https://cdn.appdynamics.com/adrum/adrum-4.3.7.1.js' "
-	 + " type='text/javascript' charset='UTF-8'" 
-	 + unescape('%3E%3C/script%3E'));
-	} else {
-	    document.write(unescape('%3Cscript')
-	 + " src='http://cdn.appdynamics.com/adrum/adrum-4.3.7.1.js' "
-	 + " type='text/javascript' charset='UTF-8'" 
-	 + unescape('%3E%3C/script%3E'));
-	}
-		</script>
 </body>
 </html>

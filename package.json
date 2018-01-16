@@ -10,6 +10,7 @@
   "author": "BashCorp Ltd.",
   "license": "ISC",
   "devDependencies": {
+    "autotrack": "^2.4.1",
     "babel-core": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",

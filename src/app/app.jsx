@@ -1,4 +1,5 @@
 import React from 'react'
+import 'autotrack'
 import {render} from 'react-dom'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
@@ -22,6 +23,12 @@ import Phone from './components/phone'
 import IconButton from './components/iconButton'
 
 const store = createStore(bashCorp)
+
+ga('create', 'UA-112543064-1', 'auto') // eslint-disable-line no-undef
+ga('require', 'eventTracker') // eslint-disable-line no-undef
+ga('require', 'outboundLinkTracker') // eslint-disable-line no-undef
+ga('require', 'urlChangeTracker') // eslint-disable-line no-undef
+ga('send', 'pageview') // eslint-disable-line no-undef
 
 ReactDOM.render(
   <Provider store={store}>

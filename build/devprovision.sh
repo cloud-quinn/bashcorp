@@ -40,7 +40,7 @@ az acs kubernetes install-cli  > /dev/null
 cp /vagrant/infrastructure/patches/_docker_utils.py /usr/lib64/az/lib/python2.7/site-packages/azure/cli/command_modules/acr/_docker_utils.py
 mkdir /home/vagrant/.kube
 mkdir /home/vagrant/.ssh
-cp -R /vagrant/build/kube.conf /home/vagrant/.kube/conf
+cp -R /vagrant/infrastructure/kube.conf /home/vagrant/.kube/conf
 cp -R /vagrant/infrastructure/ssh.conf/* /home/vagrant/.ssh
 chown -R vagrant /home/vagrant/.kube
 chown -R vagrant /home/vagrant/.ssh
