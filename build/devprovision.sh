@@ -37,7 +37,7 @@ curl -LOs https://storage.googleapis.com/kubernetes-release/release/$(curl -s ht
 chmod +x ./kubectl
 mv ./kubectl /usr/local/bin/kubectl
 az acs kubernetes install-cli  > /dev/null
-cp /vagrant/infrastructure/patches/_docker_utils.py /usr/lib64/az/lib/python2.7/site-packages/azure/cli/command_modules/acr/_docker_utils.py
+#cp /vagrant/infrastructure/patches/_docker_utils.py /usr/lib64/az/lib/python2.7/site-packages/azure/cli/command_modules/acr/_docker_utils.py
 mkdir /home/vagrant/.kube
 mkdir /home/vagrant/.ssh
 cp -R /vagrant/infrastructure/kube.conf /home/vagrant/.kube/conf

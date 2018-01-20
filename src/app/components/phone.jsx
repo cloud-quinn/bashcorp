@@ -6,7 +6,7 @@ class Phone extends React.Component{
       return(
         <div className={this.props.className}>
             <p><i className="fa fa-mobile"></i>&nbsp;
-              <span className="phone" itemProp="telephone">0123 456 789</span>
+              <a href="tel:+441233659866" className="phone" itemProp="telephone">01233 659 866</a>
               <span className="sr-only" itemProp="url">http://www.bashcorp.co.uk</span>
             </p>
         </div>

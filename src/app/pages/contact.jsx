@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import Icon from '../components/icon'
 import home from '../styles/home.less'
 import ExternalLink from '../components/externalLink'
+import Phone from '../components/phone'
 let ServicesHero = '/BashCorpImgRoot/Granada.jpeg'
 
 class Contact extends React.Component{
@@ -55,7 +56,7 @@ class Contact extends React.Component{
                             </dt>
                             <dt>Phone</dt>
                             <dd>
-                                <span itemProp="telephone">0123 456 789</span>
+                                <Phone />
                             </dd>
                             <dt>Canonical URL</dt>
                             <dd>
