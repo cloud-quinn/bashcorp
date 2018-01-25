@@ -1,23 +1,30 @@
 const path = require('path');
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config.js');
-const Uglify = require("uglifyjs-webpack-plugin");
+const ReplaceInFileWebpackPlugin = require('replace-in-file-webpack-plugin');
 
 module.exports = merge(common, {
     devtool: 'none',
-      output: {
+    output: {
         publicPath: 'https://bashcorp.azureedge.net/website/',
         path: path.resolve(path.join(__dirname, 'dist'))
-      },
-       plugins: [
-        new Uglify({
-            sourceMap: false,
-            uglifyOptions: {
-                output: {
-                    beautify: false
+    },
+    plugins: [
+        new ReplaceInFileWebpackPlugin([{
+                dir: 'dist',
+                test: /\.(html?|css)$/,
+                rules: [{
+                    search: /http\:\/\/localhost\:3001/gi,
+                    replace: ''
                 },
-                ecma: 8
-            },
-        }),
+                {
+                  search: /https\:\/\/bashcorp\.azureedge\.net\/website\/fontawesome/gi,
+                  replace: 'fontawesome'
+                }]
+            }]),
+        new webpack.DefinePlugin({
+          'process.env.NODE_ENV': JSON.stringify('production')
+        })
     ]
 });
