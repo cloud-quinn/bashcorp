@@ -2,7 +2,7 @@ import React from 'react'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 
-let ServicesHero = '/BashCorpImgRoot/Miyajima.jpeg'
+import ServicesHero from '../../assets/Miyajima.jpeg'
 
 class Services extends React.Component{
 

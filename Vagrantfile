@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "bashcorpdev"
 
   config.vm.network "forwarded_port", guest: 3000, host: 3000, host_ip: "127.0.0.1"
+  config.vm.network "forwarded_port", guest: 3001, host: 3001, host_ip: "127.0.0.1"
 
   config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
 

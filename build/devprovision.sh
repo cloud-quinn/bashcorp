@@ -4,7 +4,8 @@ cd /vagrant
 yum update -y -q > /dev/null
 yum install epel-release -y -q  > /dev/null
 yum install wget -y -q  > /dev/null
-yum install nodejs -y -q  > /dev/null
+curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
+yum -y -q install nodejs
 
 # Add the Yum repo for Yarn (from https://yarnpkg.com/lang/en/docs/install/)
 echo "💾     1/7 Installing Yarn from https://yarnpkg.com"

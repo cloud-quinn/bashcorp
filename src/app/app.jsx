@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom'
 import dependencies from './dependencies'
 import components from './styles/components.less'
+import Meta from './components/meta'
 
 import Home from './pages/home'
 import Services from './pages/services'
@@ -34,6 +35,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Grid className="grid">
+        <Meta />
         <Logo className="logo" />
         <Phone className="phoneNumber" />
         <TopNavigation className="site-navigation">

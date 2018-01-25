@@ -1,4 +1,5 @@
 import React from 'react'
+import favicon from '../../assets/favicon-96x96.png'
 
 class Logo extends React.Component{
 
@@ -7,7 +8,7 @@ class Logo extends React.Component{
     return(
       <div className={this.props.className}>
           <h1 className="sr-only"><span itemProp="name">BashCorp Ltd.</span> Professional IT Services</h1>
-          <img itemProp="image" src="img/favicon-96x96.png" alt="" className="sr-only" />
+          <img itemProp="image" src={favicon} alt="" className="sr-only" />
       </div>
     )
 

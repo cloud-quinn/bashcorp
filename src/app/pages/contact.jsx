@@ -4,7 +4,7 @@ import Icon from '../components/icon'
 import home from '../styles/home.less'
 import ExternalLink from '../components/externalLink'
 import Phone from '../components/phone'
-let ServicesHero = '/BashCorpImgRoot/Granada.jpeg'
+import ServicesHero from '../../assets/Granada.jpeg'
 
 class Contact extends React.Component{
 
@@ -51,7 +51,7 @@ class Contact extends React.Component{
                     <div className="column2">
                         <h2>Phone, Email &amp; Post</h2>
                         <dl itemScope itemType="http://schema.org/Company">
-                            <dt class="sr-only">
+                            <dt className="sr-only">
                                 <span itemProp="name">BashCorp Ltd.</span>
                             </dt>
                             <dt>Phone</dt>
