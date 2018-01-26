@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 class Phone extends React.Component{
 
@@ -13,6 +14,10 @@ class Phone extends React.Component{
       )
   }
 
+}
+
+Phone.propTypes = {
+  className: Proptypes.string
 }
 
 export default Phone

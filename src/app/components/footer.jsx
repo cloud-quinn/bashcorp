@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import ExternalLink from './externalLink'
 
 class Footer extends React.Component {
@@ -7,8 +8,8 @@ class Footer extends React.Component {
 		return(
 			<div className={this.props.className}>
 				<hr />
-				<p><strong>Privacy</strong>: we use analytics to see how many visits we get, and this involves using a <ExternalLink url="https://en.wikipedia.org/wiki/HTTP_cookie" text="cookie" />.  That said, our site doesn't 
-				need this to run properly so you're <ExternalLink url="https://www.wikihow.com/Disable-Cookies" text="welcome to disable it" />.</p>
+				<p><strong>Privacy</strong>: we use analytics to see how many visits we get, and this involves using a <ExternalLink url="https://en.wikipedia.org/wiki/HTTP_cookie" text="cookie" />.  That said, our site doesn&rsquo;t 
+				need this to run properly so you&rsquo;re <ExternalLink url="https://www.wikihow.com/Disable-Cookies" text="welcome to disable it" />.</p>
 				<p>
 					<span className="bold">&copy; BashCorp Ltd. { (new Date()).getFullYear() }</span>
 					<br />
@@ -24,6 +25,10 @@ class Footer extends React.Component {
 		)
 	}
 
+}
+
+Footer.propTypes = {
+	className: Proptypes.string
 }
 
 export default Footer

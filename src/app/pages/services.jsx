@@ -16,7 +16,7 @@ class Services extends React.Component{
                 
                 <h2>Frameworks</h2>
                 <p>
-                    We've got years of experience in <strong>AngularJS / Angular 2+</strong> and <strong>React</strong>, 
+                    We&rsquo;ve got years of experience in <strong>AngularJS / Angular 2+</strong> and <strong>React</strong>, 
                     built on both open-source platforms such as <strong>NodeJS</strong> and <strong>Microsoft IIS 8</strong>.
                 </p>
                 <p>
@@ -32,10 +32,10 @@ class Services extends React.Component{
                     </li>
                 </ul>
                 <h2>Platforms</h2>
-                <p>We&lsquo;re most at home on Windows, but also know our way around MacOS and Linux
+                <p>We&rsquo;re most at home on Windows, but also know our way around MacOS and Linux
                 based systems, with experience working in <strong>AWS</strong> and <strong>Azure</strong>.</p>
                 <h3>Toolsets</h3>
-                <p>We're passionate advocates of both TDD, BDD and DevOps, with rock-solid skills in:</p>
+                <p>Were passionate advocates of both TDD, BDD and DevOps, with rock-solid skills in:</p>
                 <ul>
                     <li>
                         JavaScript Test Frameworks (<ExternalLink url="https://karma-runner.github.io/2.0/" text="Karma" /> / <ExternalLink url="https://jasmine.github.io/" text="Jasmine" />)
@@ -62,14 +62,14 @@ class Services extends React.Component{
                         Virtualisation containers (<ExternalLink url="https://www.docker.com/" text="Docker" /> and <ExternalLink url="https://www.vagrantup.com/" text="Vagrant" />)
                     </li>
                 </ul>
-                <p>Have a look at our <a href="/portfolio">Portfolio</a> to see some of the great teams we've worked with
-                and projects we've delivered.</p>
+                <p>Have a look at our <a href="/portfolio">Portfolio</a> to see some of the great teams we&rsquo;ve worked with
+                and projects we&rsquo;ve delivered.</p>
                 <h2><a id="rates"></a>Rates</h2>
                 <p>Our rates depend on what you need and where you need us- remote working is a lot cheaper for us than
                 on-site working, plus it helps to save the environment <span className="green">♻︎</span>.  We can easily reach Manchester,
                 Birmingham, Leeds, Nottingham and can get to Liverpool and London.</p>
                 <p>Generally, our day rate is between &pound;300-400 for remote and &pound;400-500 on-site; 
-                though that's only a guide.  <ExternalLink url="https://www.gov.uk/guidance/ir35-find-out-if-it-applies" text="IR35" />, 
+                though that&rsquo;s only a guide.  <ExternalLink url="https://www.gov.uk/guidance/ir35-find-out-if-it-applies" text="IR35" />, 
                 distance and a whole bunch of stuff go into it.</p>
                 <p>Is <em>your</em> project in a stall?  Give us a call!</p>
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
-import HeroStyles from '../styles/hero.less'
+import Proptypes from 'prop-types'
+import '../styles/hero.less'
 
 class Hero extends React.Component {
 
@@ -13,6 +14,12 @@ class Hero extends React.Component {
             </div>
         )
     }
+}
+
+Hero.propTypes = {
+    url: Proptypes.string.isRequired,
+    height: Proptypes.string.isRequired,
+    children: Proptypes.object
 }
 
 export default Hero;

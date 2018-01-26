@@ -4,10 +4,10 @@ import {render} from 'react-dom'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import bashCorp from '../reducers'
-import ReactDOM from 'react-dom'
 import {BrowserRouter as Router, Route, NavLink, Switch} from 'react-router-dom'
-import dependencies from './dependencies'
-import components from './styles/components.less'
+import './dependencies'
+import './styles/components.less'
+import './styles/ie.tertiary.css'
 import Meta from './components/meta'
 
 import Home from './pages/home'
@@ -31,7 +31,7 @@ ga('require', 'outboundLinkTracker') // eslint-disable-line no-undef
 ga('require', 'urlChangeTracker') // eslint-disable-line no-undef
 ga('send', 'pageview') // eslint-disable-line no-undef
 
-ReactDOM.render(
+render(
   <Provider store={store}>
     <Router>
       <Grid className="grid">

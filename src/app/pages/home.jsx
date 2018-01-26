@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from '../components/carousel'
-import home from '../styles/home.less'
+import '../styles/home.less'
 
 class Home extends React.Component{
 
@@ -13,8 +13,8 @@ class Home extends React.Component{
         <div className="columns">
           <div className="column1">
             <h2>Who we are</h2>
-            <p>BashCorp is a duo of skilled software developers- we're ready to take on a role in larger teams, deliver individual projects or for consultancy.</p>
-            <p>We've a proven track record in enterprise, web-oriented software and we're ready to help you.</p>
+            <p>BashCorp is a duo of skilled software developers- we&rsquo;re ready to take on a role in larger teams, deliver individual projects or for consultancy.</p>
+            <p>We&rsquo;ve a proven track record in enterprise, web-oriented software and we&rsquo;re ready to help you.</p>
           </div>
           <div className="column2">
             <h2>What we do</h2>
@@ -30,7 +30,7 @@ class Home extends React.Component{
           </div>
           <div className="column1">
             <h2>Our portfolio</h2>
-            <p>We've worked with some great teams and organisations, including:</p>
+            <p>We&rsquo;ve worked with some great teams and organisations, including:</p>
             <ul>
               <li>The BBC</li>
               <li>E.on Energy UK</li>
@@ -40,8 +40,8 @@ class Home extends React.Component{
             </ul>
           </div>
            <div className="column2">
-            <h2>Where we're based</h2>
-            <p>We're based in Nottingham, and can make it easily to Manchester, Leeds, Birmingham or London.</p>
+            <h2>Where we&rsquo;re based</h2>
+            <p>We&rsquo;re based in Nottingham, and can make it easily to Manchester, Leeds, Birmingham or London.</p>
             <p>Alternatively, we can work remotely and save you money on our rates (and lowering our carbon footprint <span className="green">♻︎</span>).</p>
             <p>
               <a href="/services#rates" className="button">Rates</a>

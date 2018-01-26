@@ -17,10 +17,6 @@ module.exports = merge(common, {
                 rules: [{
                     search: /http\:\/\/localhost\:3001/gi,
                     replace: ''
-                },
-                {
-                  search: /https\:\/\/bashcorp\.azureedge\.net\/website\/fontawesome/gi,
-                  replace: 'fontawesome'
                 }]
             }]),
         new webpack.DefinePlugin({

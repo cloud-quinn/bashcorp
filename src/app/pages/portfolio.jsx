@@ -2,10 +2,7 @@ import React from 'react'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 import ServicesHero from '../../assets/Urquhart.jpeg'
-import cipfa from '../../assets/carousel/CIPFA.png'
 import bbc from '../../assets/carousel/bbcTaster.png'
-import cccu from '../../assets/carousel/cccuPortal.png'
-import cricketSoc from '../../assets/carousel/cricket-society.png'
 import eon from '../../assets/carousel/eonHeat.png'
 
 class Portfolio extends React.Component {
@@ -16,7 +13,7 @@ class Portfolio extends React.Component {
                 <Hero url={ServicesHero} height={'200px'}>
                     <h1>Portfolio</h1>
                 </Hero>
-                <p>Here are some examples of our work that we're particularly proud of!</p>
+                <p>Here are some examples of our work that we&rsquo;re particularly proud of!</p>
                 <p>Some of these projects, such as the BBC, were done as freelancers where we were employed
                 within IR35, and others as projects for clients through BashCorp, such as e.on.</p>
                 <h2>BBC Taster</h2>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 class Icon extends React.Component {
 
@@ -8,6 +9,10 @@ class Icon extends React.Component {
       )
   }
 
+}
+
+Icon.propTypes = {
+  icon: Proptypes.string.isRequired
 }
 
 export default Icon

@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 class Frame extends React.Component {
 
@@ -8,6 +9,11 @@ class Frame extends React.Component {
               {this.props.children}
             </div>
       )}
+}
+
+Frame.propTypes = {
+  className: Proptypes.string,
+  children: Proptypes.array
 }
 
 export default Frame

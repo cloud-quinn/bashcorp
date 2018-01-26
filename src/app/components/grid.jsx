@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 class Grid extends React.Component{
 
@@ -17,6 +18,11 @@ class Grid extends React.Component{
             </div>
         )
     }
+}
+
+Grid.propTypes = {
+    className: Proptypes.string,
+    children: Proptypes.array
 }
 
 export default Grid

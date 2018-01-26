@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import Icon from './icon'
 
 class ExternalLink extends React.Component{
@@ -14,6 +15,13 @@ class ExternalLink extends React.Component{
         )
     }
 
+}
+
+ExternalLink.propTypes = {
+    url: Proptypes.string.isRequired,
+    className: Proptypes.string,
+    children: Proptypes.object,
+    text: Proptypes.string
 }
 
 export default ExternalLink

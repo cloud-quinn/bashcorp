@@ -1,0 +1,56 @@
+/* A litte extra work to make the grid layout work in IE/Edge */
+
+.grid {
+    display: -ms-grid;
+    width: 100%;
+}
+
+
+.top-margin {
+    -ms-grid-row: 1;
+}
+
+.header {
+    -ms-grid-row: 3;
+}
+
+.header-padding {
+    -ms-grid-row: 4;
+}
+
+.top-padding {
+    -ms-grid-row: 2;
+}
+
+.span-all-rows {
+    -ms-grid-row-span: 10;
+}
+
+.span-all-columns {
+    -ms-grid-column-span: 6;
+}
+
+
+.skip-first-row {
+    -ms-grid-row-span: 5;
+}
+
+.parent-row {
+    -ms-grid-row-span: inherit;
+}
+
+.last-row {
+    -ms-grid-row: 9;
+}
+
+.center-column {
+    -ms-grid-column-span: 3;
+}
+
+.right-column {
+    -ms-grid-column: 3;
+}
+
+.left-column {
+    -ms-grid-column: 1;
+}

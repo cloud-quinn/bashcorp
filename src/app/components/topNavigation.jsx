@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 
 class TopNavigation extends React.Component{
 
@@ -12,6 +13,11 @@ class TopNavigation extends React.Component{
 
   }
 
+}
+
+TopNavigation.propTypes = {
+  className: Proptypes.string,
+  children: Proptypes.object
 }
 
 export default TopNavigation

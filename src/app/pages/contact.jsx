@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/hero'
 import Icon from '../components/icon'
-import home from '../styles/home.less'
+import '../styles/home.less'
 import ExternalLink from '../components/externalLink'
 import Phone from '../components/phone'
 import ServicesHero from '../../assets/Granada.jpeg'
@@ -40,7 +40,7 @@ class Contact extends React.Component{
                                 </ExternalLink>
                             </dt>
                             <dd>
-                                <p>Tweet us on Twitter and we'll twee twhat twe can twoo for too.</p>
+                                <p>Tweet us on Twitter and we&rsquo;ll see what we can do for you.</p>
                                 <p>
                                     <ExternalLink url="https://twitter.com/bashcorpit" text="twitter.com/bashcorpit" />
                                 </p>

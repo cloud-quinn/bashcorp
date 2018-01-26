@@ -2,8 +2,7 @@
   "presets": [ 
     ["env", {
       "targets": {
-        "browsers": ["ie > 10"]
-      },
-      forceAllTransforms: true
+        "browsers": ["> 5%"]
+      }
     }], "react" ]
 }

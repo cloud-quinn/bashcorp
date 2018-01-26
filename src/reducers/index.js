@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
 
-const defaultReducer = (state = [], action) => {
+const defaultReducer = (state = []) => {
     return state
 }
 

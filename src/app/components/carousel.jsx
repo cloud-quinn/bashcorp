@@ -1,5 +1,5 @@
 import React from 'react'
-import carouselstyles from '../styles/carousel.less'
+import '../styles/carousel.less'
 
 import cipfa from '../../assets/carousel/CIPFA.png'
 import bbc from '../../assets/carousel/bbcTaster.png'

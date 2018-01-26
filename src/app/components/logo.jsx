@@ -1,4 +1,5 @@
 import React from 'react'
+import Proptypes from 'prop-types'
 import favicon from '../../assets/favicon-96x96.png'
 
 class Logo extends React.Component{
@@ -14,6 +15,10 @@ class Logo extends React.Component{
 
   }
 
+}
+
+Logo.propTypes = {
+  className: Proptypes.string
 }
 
 export default Logo
