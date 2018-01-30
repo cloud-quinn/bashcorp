@@ -5,3 +5,4 @@
 import '../index.html'
 import '../sitemap.xml'
 import '../server.js'
+import '../manifest.json'

@@ -19,7 +19,7 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /src\/[^\/]{1,}\.(html?|xml)$/, loader: 'file-loader', options: { name: '[name].[ext]?[hash]'  } },
       { test: /\.(woff|woff2|ttf|svg|eot)$/, loader: 'url-loader', options: { name: '[name].[ext]?[hash]', limit: 1024, publicPath: ''  } },
-      { test: /server\.js/, loader: 'file-loader', options: { name: '[name].[ext]'  } },
+      { test: /(server\.js|manifest\.json)/, loader: 'file-loader', options: { name: '[name].[ext]'  } },
       { test: /\.less$/, use: [
         { loader: "style-loader" },
         { loader: 'css-loader', options: { minimize: true } },

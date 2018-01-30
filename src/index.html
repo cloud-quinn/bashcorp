@@ -5,6 +5,7 @@
 		<title>BashCorp Ltd. Professional IT Solutions</title>
 		<meta charset="unicode">
 		<script type="text/javascript" async="true" src="http://localhost:3001/bashcorp.js"></script>
+		<link rel="manifest" href="http://localhost:3001/manifest.json">
 		<meta name="google-site-verification" content="fG6tLYLods9xIKjyFKH2qtAobuYbrnXpxViq_8Bxst0" />
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112543064-1"></script>
 		<script>
@@ -13,7 +14,27 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-112543064-1');
-		  </script>
+		</script>
+		<script type="application/ld+json">
+			{
+			  "@context": "http://schema.org",
+			  "@type": "Organization",
+			  "url": "https://www.bashcorp.co.uk",
+			  "logo": "https://bashcorp.azureedge.net/website/favicon-96x96.png",
+			  "contactPoint": [
+			    { "@type": "ContactPoint",
+			      "telephone": "+44-1233-659-866",
+			      "email": "enquiries@bashcorp.co.uk",
+			      "contactType": "customer service",
+				  "availableLanguage": "English"
+			    }
+			  ],
+			  "sameAs": [
+			    "https://uk.linkedin.com/company/bashcorp",
+			    "https://twitter.com/bashcorpit"
+			  ]
+			}
+		</script>
 	</head>
 	<body itemscope itemtype="http://schema.org/ProfessionalService">
 	<div id="root"></div>

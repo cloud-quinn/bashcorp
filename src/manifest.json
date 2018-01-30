@@ -1,0 +1,26 @@
+{
+  "short_name": "BashCorp Ltd.",
+  "description": "Project in a stall?  Give us a call!",
+  "dir": "ltr",
+  "lang": "en-gb",
+  "icons": [
+    {
+      "src": "https://bashcorp.azureedge.net/website/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "https://bashcorp.azureedge.net/website/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "https://bashcorp.azureedge.net/website/favicon-196x196.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any"
+}
