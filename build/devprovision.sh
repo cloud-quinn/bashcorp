@@ -50,7 +50,7 @@ chown -R vagrant /home/vagrant/.ssh
 echo "💾     6/7 Installing packages for repo"
 yarn install --silent --offline --non-interactive  > /dev/null
 echo "💾     7/7 Installing WebPack and NodeMon"
-yarn global add webpack nodemon --silent --offline --non-interactive  > /dev/null
+yarn global add nodemon --silent --offline --non-interactive  > /dev/null
 
 
 # Move the user to the correct start folder

@@ -21,7 +21,7 @@ fi
 rm -rf dist/*
 
 echo "⚙️	(2/4) Building production code..."
-webpack --config webpack.production.config.js > dist/build.output
+npx webpack --config webpack.production.config.js > dist/build.output
 npx uglify-es -o dist/bashcorp.js --compress --mangle -- dist/bashcorp.js 
 
 echo "⚙️	(3/4) Building website Docker image..."
