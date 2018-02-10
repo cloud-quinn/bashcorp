@@ -13,6 +13,8 @@ class Footer extends React.Component {
 				<p>
 					<span className="bold">&copy; BashCorp Ltd. { (new Date()).getFullYear() }</span>
 					<br />
+					Registered company 10727538
+					<br />
 					<span itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
 					<span itemProp="streetAddress">International House&nbsp;
 					776 - 778 Barking Road</span>,&nbsp;
