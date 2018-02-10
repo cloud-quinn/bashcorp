@@ -1,4 +1,5 @@
 import React from 'react'
+import PageBase from './PageBase'
 import Hero from '../components/hero'
 import Icon from '../components/icon'
 import '../styles/home.less'
@@ -6,11 +7,13 @@ import ExternalLink from '../components/externalLink'
 import Phone from '../components/phone'
 import ServicesHero from '../../assets/Granada.jpeg'
 
-class Contact extends React.Component{
+class Contact extends PageBase{
+
+    constructor(props) {
+        super(props, 'Contact BashCorp Ltd.', 'contact')
+    }
 
     render(){
-        document.title = 'Contact BashCorp Ltd.'
-
         return(
             <div className="home-component">
                 <Hero url={ServicesHero} height={'200px'}>

@@ -1,11 +1,16 @@
 import React from 'react'
+import PageBase from './PageBase'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 import ServicesHero from '../../assets/Urquhart.jpeg'
 import bbc from '../../assets/carousel/bbcTaster.png'
 import eon from '../../assets/carousel/eonHeat.png'
 
-class Portfolio extends React.Component {
+class Portfolio extends PageBase {
+
+    constructor(props) {
+        super(props, 'Portfolio of our Clients and Projects', 'portfolio')
+    }
 
     render(){
         return (

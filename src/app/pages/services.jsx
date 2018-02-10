@@ -1,13 +1,17 @@
 import React from 'react'
+import PageBase from './pageBase'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 
 import ServicesHero from '../../assets/Miyajima.jpeg'
 
-class Services extends React.Component{
+class Services extends PageBase {
+
+    constructor(props) {
+        super(props, 'Services Available from BashCorp Ltd.', 'services')
+    }
 
     render(){
-        document.title = 'Services available from BashCorp Ltd.'
         return(
             <div>
                 <Hero url={ServicesHero} height={'200px'}>

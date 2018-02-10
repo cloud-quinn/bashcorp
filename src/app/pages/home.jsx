@@ -1,12 +1,15 @@
 import React from 'react'
+import PageBase from './PageBase'
 import Carousel from '../components/carousel'
 import '../styles/home.less'
 
-class Home extends React.Component{
+class Home extends PageBase{
+
+    constructor(props) {
+        super(props, 'BashCorp Ltd. Professional IT Solutions', '')
+    }
 
   render(){
-    document.title = 'BashCorp Ltd. Professional IT Solutions'
-    
     return(
       <div className="home-component">
         <Carousel />
