@@ -8,6 +8,6 @@ else
 	version=$1
 fi 
 
-az acs kubernetes get-credentials --resource-group BashCorp --name BashCorpCluster
+az aks get-credentials --resource-group BashCorp2 --name BashCorpCluster2
 kubectl set image deployment reverseproxy reverseproxy=bashcorpacr.azurecr.io/reverseproxy:$version
 echo "✅   Done deploying image"

@@ -9,6 +9,6 @@ else
 fi 
 
 echo "Updating website to v$version..."
-az acs kubernetes get-credentials --resource-group BashCorp --name BashCorpCluster
+az aks get-credentials --resource-group BashCorp2 --name BashCorpCluster2
 kubectl set image deployment website website=bashcorpacr.azurecr.io/website:$version
 echo "✅   Done deploying image"

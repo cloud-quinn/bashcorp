@@ -1,0 +1,6 @@
+HTTP/2.0 200 OK
+Content-Length: 179
+Content-Type: application/json
+Date: Thu, 15 Feb 2018 15:59:55 GMT
+
+{"kind":"APIVersions","versions":["v1"],"serverAddressByClientCIDRs":[{"clientCIDR":"0.0.0.0/0","serverAddress":"\"bashcorpcl-bashcorp2-615e74-4fb2ad15.hcp.eastus.azmk8s.io\""}]}
