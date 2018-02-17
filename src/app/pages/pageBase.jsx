@@ -7,7 +7,7 @@ class PageBase extends React.Component {
 
         this.title = title
         this.canonical = canonical
-        this.base = 'http://www.bashcorp.co.uk'
+        this.base = 'https://www.bashcorp.co.uk'
     }
 
     componentWillMount(){
