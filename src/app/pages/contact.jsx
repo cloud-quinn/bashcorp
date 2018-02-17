@@ -24,6 +24,15 @@ class Contact extends PageBase{
                         <h2>Social Media</h2>
                         <dl>
                             <dt>
+                                <ExternalLink url="https://blog.bashcorp.co.uk">
+                                    <Icon icon="fa-tumblr" />
+                                </ExternalLink>
+                            </dt>
+                            <dd>
+                                <p>Our official blog! Code samples, projects, <em>Waterfall</em> and more appear here!</p>
+                                <ExternalLink url="https://blog.bashcorp.co.uk" text="blog.bashcorp.co.uk" />
+                            </dd>
+                            <dt>
                                 <ExternalLink url="https://uk.linkedin.com/company/bashcorp">
                                     <Icon icon="fa-linkedin" />
                                 </ExternalLink>
@@ -63,7 +72,7 @@ class Contact extends PageBase{
                             </dd>
                             <dt>Canonical URL</dt>
                             <dd>
-                                <span itemProp="url">http://www.bashcorp.co.uk</span>
+                                <span itemProp="url">https://www.bashcorp.co.uk</span>
                             </dd>
                             <dt>Email</dt>
                             <dd>
