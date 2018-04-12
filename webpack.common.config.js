@@ -6,7 +6,7 @@ const extractTextIE = new ExtractTextPlugin('ie.css');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
-  entry: './src/app/app.jsx',
+  entry: ['babel-polyfill', path.resolve(__dirname, './src/app/app.jsx')],
   output: {
     filename: 'bashcorp.js'
   },
