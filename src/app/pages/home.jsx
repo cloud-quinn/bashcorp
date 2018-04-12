@@ -1,5 +1,5 @@
 import React from 'react'
-import PageBase from './PageBase'
+import PageBase from './pageBase'
 import Carousel from '../components/carousel'
 import '../styles/home.less'
 

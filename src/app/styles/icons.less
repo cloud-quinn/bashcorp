@@ -1,61 +1,104 @@
 // Variables
 // --------------------------
 
-@fa-font-path:        "../fonts";
-@fa-font-size-base:   14px;
+@fa-font-path: '../fonts';
+@fa-font-size-base: 14px;
 @fa-line-height-base: 1;
-@fa-css-prefix:       fa;
-@fa-version:          "4.7.0";
-@fa-border-color:     #eee;
-@fa-inverse:          #fff;
-@fa-li-width:         (30em / 14);
-
-@fa-var-500px: "\f26e";
-@fa-var-envelope-o: "\f003";
-@fa-var-external-link: "\f08e";
-@fa-var-handshake-o: "\f2b5";
-@fa-var-home: "\f015";
-@fa-var-mobile: "\f10b";
-@fa-var-picture-o: "\f03e";
-@fa-var-chevron-left: "\f053";
-@fa-var-chevron-right: "\f054";
-@fa-var-linkedin: "\f0e1";
-@fa-var-linkedin-square: "\f08c";
-@fa-var-twitter: "\f099";
-@fa-var-twitter-square: "\f081";
-@fa-var-tumblr: "\f173";
-@fa-var-tumblr-square: "\f174";
-
+@fa-css-prefix: fa;
+@fa-version: '4.7.0';
+@fa-border-color: #eee;
+@fa-inverse: #fff;
+@fa-li-width: (30em / 14);
+@fa-var-500px: '\f26e';
+@fa-var-envelope-o: '\f003';
+@fa-var-external-link: '\f08e';
+@fa-var-handshake-o: '\f2b5';
+@fa-var-home: '\f015';
+@fa-var-mobile: '\f10b';
+@fa-var-picture-o: '\f03e';
+@fa-var-chevron-left: '\f053';
+@fa-var-chevron-right: '\f054';
+@fa-var-linkedin: '\f0e1';
+@fa-var-linkedin-square: '\f08c';
+@fa-var-twitter: '\f099';
+@fa-var-twitter-square: '\f081';
+@fa-var-tumblr: '\f173';
+@fa-var-tumblr-square: '\f174';
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-   readers do not read off random characters that represent icons */
+readers do not read off random characters that represent icons */
 
-.@{fa-css-prefix}-envelope-o:before { content: @fa-var-envelope-o; }
-.@{fa-css-prefix}-external-link:before { content: @fa-var-external-link; }
-.@{fa-css-prefix}-handshake-o:before { content: @fa-var-handshake-o; }
-.@{fa-css-prefix}-home:before { content: @fa-var-home; }
-.@{fa-css-prefix}-mobile:before { content: @fa-var-mobile; }
-.@{fa-css-prefix}-picture-o:before { content: @fa-var-picture-o; }
-.@{fa-css-prefix}-chevron-left:before { content: @fa-var-chevron-left; }
-.@{fa-css-prefix}-chevron-right:before { content: @fa-var-chevron-right; }
-.@{fa-css-prefix}-linkedin-square:before { content: @fa-var-linkedin-square; }
-.@{fa-css-prefix}-linkedin:before { content: @fa-var-linkedin; }
-.@{fa-css-prefix}-twitter-square:before { content: @fa-var-twitter-square; }
-.@{fa-css-prefix}-twitter:before { content: @fa-var-twitter; }
-.@{fa-css-prefix}-tumblr:before { content: @fa-var-tumblr; }
-.@{fa-css-prefix}-tumblr-square:before { content: @fa-var-tumblr-square; }
+.@{fa-css-prefix}-envelope-o:before {
+  content: @fa-var-envelope-o;
+}
+
+.@{fa-css-prefix}-external-link:before {
+  content: @fa-var-external-link;
+}
+
+.@{fa-css-prefix}-handshake-o:before {
+  content: @fa-var-handshake-o;
+}
+
+.@{fa-css-prefix}-home:before {
+  content: @fa-var-home;
+}
+
+.@{fa-css-prefix}-mobile:before {
+  content: @fa-var-mobile;
+}
+
+.@{fa-css-prefix}-picture-o:before {
+  content: @fa-var-picture-o;
+}
+
+.@{fa-css-prefix}-chevron-left:before {
+  content: @fa-var-chevron-left;
+}
+
+.@{fa-css-prefix}-chevron-right:before {
+  content: @fa-var-chevron-right;
+}
+
+.@{fa-css-prefix}-linkedin-square:before {
+  content: @fa-var-linkedin-square;
+}
+
+.@{fa-css-prefix}-linkedin:before {
+  content: @fa-var-linkedin;
+}
+
+.@{fa-css-prefix}-twitter-square:before {
+  content: @fa-var-twitter-square;
+}
+
+.@{fa-css-prefix}-twitter:before {
+  content: @fa-var-twitter;
+}
+
+.@{fa-css-prefix}-tumblr:before {
+  content: @fa-var-tumblr;
+}
+
+.@{fa-css-prefix}-tumblr-square:before {
+  content: @fa-var-tumblr-square;
+}
+
 
 // Mixins
 // --------------------------
 
 .fa-icon() {
   display: inline-block;
-  font: normal normal normal @fa-font-size-base/@fa-line-height-base FontAwesome; // shortening font declaration
-  font-size: inherit; // can't have font-size inherit on line above, so need to override
-  text-rendering: auto; // optimizelegibility throws things off #1094
+  font: normal normal normal @fa-font-size-base / @fa-line-height-base FontAwesome;
+  // shortening font declaration
+  font-size: inherit;
+  // can't have font-size inherit on line above, so need to override
+  text-rendering: auto;
+  // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
+
 
 
 // Only display content to screen readers. A la Bootstrap 4.
@@ -69,13 +112,15 @@
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
+
 // Use in conjunction with .sr-only to only display content when it's focused.
 //
-// Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+// Useful for 'Skip to main content' links; see
+// http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
 //
 // Credit: HTML5 Boilerplate
 
@@ -89,10 +134,12 @@
     overflow: visible;
     clip: auto;
   }
+
 }
 
-@import "../../../node_modules/font-awesome/less/path.less";
-@import "../../../node_modules/font-awesome/less/core.less";
-@import "../../../node_modules/font-awesome/less/larger.less";
-@import "../../../node_modules/font-awesome/less/fixed-width.less";
-@import "../../../node_modules/font-awesome/less/screen-reader.less";
+
+@import '../../../node_modules/font-awesome/less/path';
+@import '../../../node_modules/font-awesome/less/core';
+@import '../../../node_modules/font-awesome/less/larger';
+@import '../../../node_modules/font-awesome/less/fixed-width';
+@import '../../../node_modules/font-awesome/less/screen-reader';

@@ -1,5 +1,5 @@
 import React from 'react'
-import PageBase from './PageBase'
+import PageBase from './pageBase'
 import Hero from '../components/hero'
 import ExternalLink from '../components/externalLink'
 import ServicesHero from '../../assets/Urquhart.jpeg'

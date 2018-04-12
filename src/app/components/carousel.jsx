@@ -6,17 +6,21 @@ import bbc from '../../assets/carousel/bbcTaster.png'
 import cccu from '../../assets/carousel/cccuPortal.png'
 import cricketSoc from '../../assets/carousel/cricket-society.png'
 import eon from '../../assets/carousel/eonHeat.png'
+import totallyMoney from '../../assets/carousel/TotallyMoneyCommuterTool.png'
+
+//https://www.express.co.uk/life-style/property/844831/house-prices-property-commute-london
 
 class Carousel extends React.Component{
 
   constructor(){
     super()
     this.slides = [
-      {'index': 0, 'img': bbc, 'url': 'http://www.bbc.co.uk/taster', caption: 'As independent contractors, we were part of the BBC Taster team- delivering updates and new features to BBC Taster'},
-      {'index': 1, 'img': eon, 'url': 'http://heat.eonenergy.com', caption: 'We worked with E.On to release their community energy Heat site in Sitecore 8.2/C♯ .Net'},
-      {'index': 2, 'img': cipfa, 'url': 'http://www.cipfa.org', caption: 'We collaborate with CIPFA on a number of projects, including their new Employer Portal via MyCIPFA'},
-      {'index': 3, 'img': cccu, 'url': 'http://www.canterbury.ac.uk', caption: 'We\'ve delivered new student services for Canterbury Christ Church University, in Kent, in .Net and Angular'},
-      {'index': 4, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org', caption: 'We built a new Umbraco/C♯ .Net for the British Cricket Society'}
+      {'index': 0, 'img': totallyMoney, 'url': 'https://totallymoney.com/commuter-hotspots/tool/', caption: 'As featured in the Daily Express! We worked closely with our clients at TotallyMoney to update and refresh their Commuter Hotspots Tool, helping commuters find the best places to live in London'},
+      {'index': 1, 'img': bbc, 'url': 'https://www.bbc.co.uk/taster', caption: 'As independent contractors, we were part of the BBC Taster team- delivering updates and new features to BBC Taster'},
+      {'index': 2, 'img': eon, 'url': 'https://heat.eonenergy.com', caption: 'We worked with E.On to release their community energy Heat site in Sitecore 8.2/C♯ .Net'},
+      {'index': 3, 'img': cipfa, 'url': 'https://www.cipfa.org', caption: 'We collaborate with CIPFA on a number of projects, including their new Employer Portal via MyCIPFA'},
+      {'index': 4, 'img': cccu, 'url': 'https://www.canterbury.ac.uk', caption: 'We\'ve delivered new student services for Canterbury Christ Church University, in Kent, in .Net and Angular'},
+      {'index': 5, 'img': cricketSoc, 'url': 'http://www.cricketsociety.org', caption: 'We built a new Umbraco/C♯ .Net for the British Cricket Society'}
     ]
 
     this.currentSlide = this.slides[0]
@@ -72,8 +76,7 @@ class Carousel extends React.Component{
         <div className="slide" style={{backgroundImage: 'url(' + this.currentSlide.img + ')'}} onClick={this.handleClick}>
 
         </div>
-        <div className="caption">
-          {this.currentSlide.caption}
+        <div className="caption" dangerouslySetInnerHTML={{__html: this.currentSlide.caption}}>
         </div>
       </div>
     )

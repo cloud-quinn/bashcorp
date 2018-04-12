@@ -2,7 +2,7 @@
   "presets": [ 
     ["env", {
       "targets": {
-        "browsers": ["> 5%", "IE >= 11"]
+        "browsers": ["> 1%", "IE >= 10"]
       }
     }], "react" ]
 }

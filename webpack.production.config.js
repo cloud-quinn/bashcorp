@@ -1,4 +1,5 @@
 const path = require('path');
+const BabelPlugin = require('babel-webpack-plugin');
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common.config.js');
@@ -21,6 +22,23 @@ module.exports = merge(common, {
             }]),
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': JSON.stringify('production')
+        }),
+        new BabelPlugin({
+          test: /\.js$/,
+          presets: [
+            [
+              "env",
+              {
+                "exclude": [
+                  'transform-regenerator'
+                ],
+                "targets": {
+                  "browsers": ["> 1%", "IE >= 10"]
+                }
+              }
+            ]
+          ],
+         compact: true
         })
     ]
 });

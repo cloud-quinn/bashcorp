@@ -7,9 +7,12 @@ class Footer extends React.Component {
 	render() {
 		return(
 			<div className={this.props.className}>
+				<h3>Privacy</h3> 
+				<p>We need to use analytics to see how many visits we get, which pages are popular and where in the world our visitors come from.  It also lets us know when errors on our site happen.</p>
+				Doing this involves using a <ExternalLink url="https://en.wikipedia.org/wiki/HTTP_cookie" text="cookie" /> which is placed in your web browser&rsquo;s temporary files. These analytics are provided by <ExternalLink url="https://analytics.google.com" text="Google Analytics" />.
+				We cannot identify visitors individually based on these analytics.
+				<p><strong>Our site does not require this cookie to work, however, and you can <ExternalLink url="https://www.wikihow.com/Disable-Cookies" text="disable the cookie using these instructions" />.</strong></p>
 				<hr />
-				<p><strong>Privacy</strong>: we use analytics to see how many visits we get, and this involves using a <ExternalLink url="https://en.wikipedia.org/wiki/HTTP_cookie" text="cookie" />.  That said, our site doesn&rsquo;t 
-				need this to run properly so you&rsquo;re <ExternalLink url="https://www.wikihow.com/Disable-Cookies" text="welcome to disable it" />.</p>
 				<p>
 					<span className="bold">&copy; BashCorp Ltd. { (new Date()).getFullYear() }</span>
 					<br />

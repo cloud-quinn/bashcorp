@@ -1,5 +1,5 @@
 import React from 'react'
-import PageBase from './PageBase'
+import PageBase from './pageBase'
 import Hero from '../components/hero'
 import Icon from '../components/icon'
 import '../styles/home.less'
