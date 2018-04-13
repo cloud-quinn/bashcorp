@@ -12,8 +12,18 @@ class PageBase extends React.Component {
 
     componentWillMount(){
         document.title = this.title
-        let canonical = Array.from(document.head.getElementsByTagName('link')).find(l => l.rel === 'canonical')
-        canonical.href = `${this.base}/${this.canonical}`
+        let append = false
+        let c = Array.from(document.head.getElementsByTagName('link')).find(l => l.rel === 'canonical')
+        if (!c) {
+         c = document.createElement('link')
+         append = true;
+        }
+
+        c.rel = 'canonical';
+        c.href = `${this.base}/${this.canonical}`
+        if (append) 
+           document.head.appendChild(c);
+  
     }
 }
 

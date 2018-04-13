@@ -22,6 +22,7 @@ import TopNavigation from './components/topNavigation'
 import Logo from './components/logo'
 import Phone from './components/phone'
 import IconButton from './components/iconButton'
+import IEMessage from './components/ieMessage'
 
 const store = createStore(bashCorp)
 
@@ -35,6 +36,7 @@ render(
   <Provider store={store}>
     <Router>
       <Grid className="grid">
+        <IEMessage />
         <Meta />
         <Logo className="logo" />
         <Phone className="phoneNumber" />
