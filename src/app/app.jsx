@@ -43,22 +43,22 @@ render(
           <ul>
             <li>
                 <NavLink activeClassName="selected" className="button" exact to="/">
-                    <IconButton icon="fa-home" label="Home" />
+                    <IconButton label="Home" />
                 </NavLink>
             </li>
             <li>
                 <NavLink activeClassName="selected" className="button" to="/services">
-                    <IconButton icon="fa-handshake-o" label="Services" />
+                    <IconButton label="Services" />
                 </NavLink>
             </li>
             <li>
                 <NavLink activeClassName="selected" className="button" to="/portfolio">
-                    <IconButton icon="fa-picture-o" label="Portfolio" />
+                    <IconButton label="Portfolio" />
                 </NavLink>
             </li>
             <li>
                 <NavLink activeClassName="selected" className="button" to="/contact">
-                    <IconButton icon="fa-envelope-o" label="Contact" />
+                    <IconButton label="Contact" />
                 </NavLink>
             </li>
           </ul>

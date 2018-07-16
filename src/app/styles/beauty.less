@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'verdana', 'arial', sans-serif;
+    font-family: 'arial', sans-serif;
     color: @dark;
 }
 
@@ -101,19 +101,14 @@ li {
 
 a.button,
 button {
-    color: @gold;
+    color: @midgray;
     text-decoration: none;
     padding: 5px;
-    border: 2px solid @gold;
-    border-radius: 1px;
-    background-color: @hover;
-    opacity: 0.9;
 }
 
 a.button.selected,
 button.selected {
-    background: @gold;
-    color: @highlight;
+    color: @midgray;
     text-shadow: none;
 }
 
@@ -123,14 +118,13 @@ button:focus {
 }
 
 a.button.selected:hover,
-button:hover {
-    background-color: lighten(@hover, 10);
-    color: @midgray;
+a.button:hover {
+    text-decoration: underline;
 }
 
 a.button:active,
 button:active {
-    background-color: @highlight;
+
 }
 
 .inline-list {
